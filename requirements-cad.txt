@@ -1,0 +1,4 @@
+﻿-r requirements-base.txt
+ezdxf>=1.2
+shapely>=2.0
+numpy>=1.26

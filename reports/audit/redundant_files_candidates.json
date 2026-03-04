@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-02-22T02:41:40Z",
+  "artifact_dir_candidates": [
+    {
+      "path": "workspace",
+      "category": "artifact_dir",
+      "file_count": 0,
+      "recommended_action": "archive_or_remove_from_release_scope"
+    },
+    {
+      "path": "tmp_pytest_work",
+      "category": "artifact_dir",
+      "file_count": 30,
+      "recommended_action": "archive_or_remove_from_release_scope"
+    },
+    {
+      "path": ".pytest_cache",
+      "category": "artifact_dir",
+      "file_count": 5,
+      "recommended_action": "archive_or_remove_from_release_scope"
+    },
+    {
+      "path": "__pycache__",
+      "category": "artifact_dir",
+      "file_count": 8,
+      "recommended_action": "archive_or_remove_from_release_scope"
+    }
+  ],
+  "duplicate_name_candidates": [
+    {
+      "name": "plugin.py",
+      "count": 24,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    },
+    {
+      "name": "__init__.py",
+      "count": 13,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    },
+    {
+      "name": "app.py",
+      "count": 4,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    },
+    {
+      "name": "widgets.py",
+      "count": 4,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    },
+    {
+      "name": "models.py",
+      "count": 3,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    },
+    {
+      "name": "risk.py",
+      "count": 3,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    },
+    {
+      "name": "store.py",
+      "count": 3,
+      "category": "duplicate_basename",
+      "recommended_action": "review_semantic_duplication"
+    }
+  ]
+}

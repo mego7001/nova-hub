@@ -1,0 +1,16 @@
+{
+  "id": "patch_apply",
+  "name": "Patch Apply",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.patch_apply.plugin",
+  "tool_groups": ["fs_read", "fs_write"],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "default_backup_suffix": {"type": "string"},
+      "default_reports_dir": {"type": "string"}
+    },
+    "required": []
+  }
+}

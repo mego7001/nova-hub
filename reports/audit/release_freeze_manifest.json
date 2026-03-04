@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-02-22T02:41:40Z",
+  "scope_file_count": 344,
+  "scope_manifest_sha256": "99b44acb2695dc684fdf03498b41595d9ac72a25f8c971e82c51b93111fd80dd",
+  "frozen_artifacts": [
+    {
+      "path": "reports/audit/baseline_manifest.json",
+      "sha256": "99b44acb2695dc684fdf03498b41595d9ac72a25f8c971e82c51b93111fd80dd",
+      "size_bytes": 69094
+    },
+    {
+      "path": "reports/audit/findings.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "reports/audit/test_execution_matrix.md",
+      "sha256": "2678a7ab0e3128ff40a5518992dffcc75a1fbec65e1904ecaee889cffb19e591",
+      "size_bytes": 849
+    },
+    {
+      "path": "reports/audit/test_gap_matrix.json",
+      "sha256": "9c8771b7463bb10c935c0b06205b89165d4feb73701d5b9d4491d01eddf551cd",
+      "size_bytes": 4746
+    },
+    {
+      "path": "reports/audit/line_review_matrix.csv",
+      "sha256": "360dbf7e76bf48bfbb64f63e0d55f630c4e18c101766dc9b728ae2c6e3ba89aa",
+      "size_bytes": 31547
+    },
+    {
+      "path": "reports/release_gate_results.json",
+      "sha256": "f21a6514c98acf0759ed49c5d04e9263465fadc91b1d2a80db04babe88d3c877",
+      "size_bytes": 325
+    },
+    {
+      "path": "reports/go_no_go_decision.md",
+      "sha256": "c2c43466c0e2fab282fb662ef91c3d15bca1eee550db6a91fa420b25cfa31da7",
+      "size_bytes": 201
+    },
+    {
+      "path": "reports/FINAL_RELEASE_READINESS_AR.md",
+      "sha256": "577bfc8a7765c269db52c6df6ba7f3efd15209fd1082002728f035198c947835",
+      "size_bytes": 550
+    },
+    {
+      "path": "reports/final_findings_summary.json",
+      "sha256": "94b68268b9ee68306733bf49786be190389802bcf2c4744ab6deaa150bbcd701",
+      "size_bytes": 136
+    }
+  ]
+}

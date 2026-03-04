@@ -1,0 +1,20 @@
+{
+  "id": "core_examples",
+  "name": "Core Examples",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.core_examples.plugin",
+  "tool_groups": [
+    "fs_read",
+    "fs_write"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "note": {
+        "type": "string"
+      }
+    },
+    "required": []
+  }
+}

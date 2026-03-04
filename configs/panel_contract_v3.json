@@ -1,0 +1,157 @@
+{
+  "contract_version": "3.0.0",
+  "strategy": "unified_hud_base",
+  "profiles": {
+    "full": {
+      "description": "Primary shell for full Nova experience.",
+      "navigation": "left_drawer",
+      "panels": [
+        "chat",
+        "tools",
+        "attach",
+        "health",
+        "history",
+        "voice"
+      ]
+    },
+    "compact": {
+      "description": "Compact shell used by quick panel.",
+      "navigation": "left_drawer_compact",
+      "panels": [
+        "chat",
+        "tools",
+        "attach",
+        "health",
+        "history",
+        "voice"
+      ]
+    }
+  },
+  "application_states": [
+    "idle",
+    "thinking",
+    "awaiting_approval",
+    "voice_active",
+    "error_degraded"
+  ],
+  "capability_to_panel_map": {
+    "chat.send": "chat",
+    "chat.timeline": "history",
+    "tools.catalog": "tools",
+    "tools.approvals": "tools",
+    "ingest.attach": "attach",
+    "health.doctor": "health",
+    "voice.controls": "voice",
+    "voice.readiness": "voice",
+    "memory.search": "history",
+    "ollama.health": "health",
+    "ollama.models": "health"
+  },
+  "interaction_contract": [
+    {
+      "action_id": "switch_mode",
+      "source_panel": "chat",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.chat.switch_mode"
+    },
+    {
+      "action_id": "open_drawer",
+      "source_panel": "chat",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.shell.open_drawer"
+    },
+    {
+      "action_id": "run_doctor",
+      "source_panel": "health",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.health.run_doctor"
+    },
+    {
+      "action_id": "apply_queue",
+      "source_panel": "tools",
+      "requires_approval": true,
+      "fallback_behavior": "show_reason",
+      "telemetry_key": "action.tools.apply_queue"
+    },
+    {
+      "action_id": "apply_confirm",
+      "source_panel": "tools",
+      "requires_approval": true,
+      "fallback_behavior": "show_reason",
+      "telemetry_key": "action.tools.apply_confirm"
+    },
+    {
+      "action_id": "apply_reject",
+      "source_panel": "tools",
+      "requires_approval": true,
+      "fallback_behavior": "show_reason",
+      "telemetry_key": "action.tools.apply_reject"
+    },
+    {
+      "action_id": "voice_toggle",
+      "source_panel": "voice",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.voice.toggle"
+    },
+    {
+      "action_id": "voice_mute_toggle",
+      "source_panel": "voice",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.voice.mute_toggle"
+    },
+    {
+      "action_id": "voice_stop",
+      "source_panel": "voice",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.voice.stop"
+    },
+    {
+      "action_id": "voice_replay",
+      "source_panel": "voice",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.voice.replay"
+    },
+    {
+      "action_id": "security_audit",
+      "source_panel": "tools",
+      "requires_approval": false,
+      "fallback_behavior": "show_reason",
+      "telemetry_key": "action.tools.security_audit"
+    },
+    {
+      "action_id": "refresh_timeline",
+      "source_panel": "history",
+      "requires_approval": false,
+      "fallback_behavior": "show_status",
+      "telemetry_key": "action.history.refresh"
+    },
+    {
+      "action_id": "app_minimize",
+      "source_panel": "chat",
+      "requires_approval": false,
+      "fallback_behavior": "noop",
+      "telemetry_key": "action.window.minimize"
+    },
+    {
+      "action_id": "app_close",
+      "source_panel": "chat",
+      "requires_approval": false,
+      "fallback_behavior": "noop",
+      "telemetry_key": "action.window.close"
+    },
+    {
+      "action_id": "memory_search",
+      "source_panel": "history",
+      "requires_approval": false,
+      "fallback_behavior": "show_empty",
+      "telemetry_key": "action.memory.search"
+    }
+  ]
+}

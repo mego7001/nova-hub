@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-02-06T06:03:12.980615Z",
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Disagreement",
+      "passed": true,
+      "detail": "Disagreement + single question + no execution"
+    },
+    {
+      "name": "Graduated Warnings",
+      "passed": true,
+      "detail": "Level 2 differs, no question spam, level 3 logged"
+    },
+    {
+      "name": "Confirmation Gating",
+      "passed": true,
+      "detail": "No execution without explicit confirm"
+    },
+    {
+      "name": "Recovery Mode",
+      "passed": true,
+      "detail": "Plan first, reminder once after success"
+    },
+    {
+      "name": "Persistence",
+      "passed": true,
+      "detail": "Warning level persists across sessions"
+    }
+  ],
+  "limitations": [
+    "Simulator mirrors Jarvis Core flow; it does not drive the Qt UI.",
+    "Tool execution gating is simulated; UI button flows are not exercised."
+  ]
+}

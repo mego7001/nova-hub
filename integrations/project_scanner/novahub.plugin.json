@@ -1,0 +1,16 @@
+{
+  "id": "project_scanner",
+  "name": "Project Scanner",
+  "version": "0.1.0",
+  "kind": "integration",
+  "entrypoint": "integrations.project_scanner.plugin",
+  "tool_groups": ["fs_read"],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "default_exclude_globs": {"type": "array", "items": {"type": "string"}},
+      "max_file_bytes": {"type": "integer"}
+    },
+    "required": []
+  }
+}

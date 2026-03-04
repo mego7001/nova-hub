@@ -1,0 +1,13 @@
+{
+  "id": "sketch",
+  "name": "Sketch Tools",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.sketch.plugin",
+  "tool_groups": ["fs_read", "fs_write"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

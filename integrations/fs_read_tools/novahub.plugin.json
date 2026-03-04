@@ -1,0 +1,13 @@
+{
+  "id": "fs_read_tools",
+  "name": "FS Read Tools",
+  "version": "0.1.0",
+  "kind": "core",
+  "entrypoint": "integrations.fs_read_tools.plugin",
+  "tool_groups": ["fs_read"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

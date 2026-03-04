@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-22T02:41:40Z",
+  "passed": true,
+  "checks": {
+    "no_open_p0_p1": true,
+    "no_open_p2": true,
+    "critical_tests_stable": true,
+    "critical_gap_open_zero": true
+  },
+  "open_p0_p1_count": 0,
+  "open_p2_count": 0,
+  "unstable_tests_count": 0,
+  "critical_gap_open_count": 0
+}

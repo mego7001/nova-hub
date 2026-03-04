@@ -1,0 +1,12 @@
+enabled: true
+servers:
+  patch:
+    cmd:
+      - python
+      - -m
+      - mcp_servers.patch_server
+    tools:
+      - patch.plan
+      - patch.apply
+    timeout_sec: 90
+    env: {}

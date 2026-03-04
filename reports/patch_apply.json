@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-01-31T00:10:04.469874Z",
+  "diff_path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\patches\\plan_001.diff",
+  "target_root": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub",
+  "create_backup": true,
+  "backup_suffix": ".bak",
+  "files": [
+    {
+      "path": ".gitignore",
+      "status": "success",
+      "backup_path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\.gitignore.bak"
+    }
+  ],
+  "totals": {
+    "success_count": 1,
+    "failed_count": 0
+  }
+}

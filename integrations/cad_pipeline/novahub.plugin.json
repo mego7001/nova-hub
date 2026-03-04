@@ -1,0 +1,13 @@
+{
+  "id": "cad_pipeline",
+  "name": "CAD Pipeline Tools",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.cad_pipeline.plugin",
+  "tool_groups": ["fs_write"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

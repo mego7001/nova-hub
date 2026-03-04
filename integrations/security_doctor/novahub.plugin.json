@@ -1,0 +1,13 @@
+{
+  "id": "security_doctor",
+  "name": "Security Doctor",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.security_doctor.plugin",
+  "tool_groups": ["fs_read"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gemini",
+  "name": "Gemini API",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.gemini.plugin",
+  "tool_groups": [
+    "gemini",
+    "network"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "api_key": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      },
+      "timeout_sec": {
+        "type": "integer"
+      }
+    },
+    "required": []
+  }
+}

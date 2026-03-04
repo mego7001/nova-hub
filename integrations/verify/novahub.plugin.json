@@ -1,0 +1,16 @@
+{
+  "id": "verify",
+  "name": "Verify",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.verify.plugin",
+  "tool_groups": ["process_exec", "fs_read", "fs_write"],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "timeout_sec": {"type": "integer"},
+      "reports_dir": {"type": "string"}
+    },
+    "required": []
+  }
+}

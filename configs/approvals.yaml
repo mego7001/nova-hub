@@ -1,0 +1,63 @@
+version: 1
+defaults:
+  mode: require_approval
+
+always_deny:
+  - id: deny_ssh
+    type: path_glob
+    pattern: "**/.ssh/**"
+    reason: "SSH keys are sensitive"
+  - id: deny_env
+    type: path_glob
+    pattern: "**/.env"
+    reason: "Environment files may contain secrets"
+    condition:
+      op: fs_write
+      unless_path_glob: "**/workspace/secrets/.env"
+  - id: deny_destructive_cmds
+    type: command_regex
+    pattern: '(?i)\b(rm\s+-rf|mkfs\b|diskpart\b|format\b|shutdown\b|reboot\b)\b'
+    reason: "Destructive command"
+
+auto_allow:
+  - id: allow_outputs
+    type: path_glob
+    pattern: "outputs/**"
+    reason: "Approved output directory"
+  - id: allow_git_read_ops
+    type: op_regex
+    pattern: "^git_(status|diff)$"
+    reason: "Git read operations"
+  - id: allow_local_ollama
+    type: tool_group
+    group: ollama
+    reason: "Local Ollama calls are approved by policy"
+
+require_approval:
+  - id: git_commit_requires_approval
+    type: op_equals
+    op: git_commit
+    reason: "Git commit changes repository state"
+  - id: fs_write_outside_outputs
+    type: path_glob
+    pattern: "**"
+    reason: "Any write outside outputs must be approved"
+    condition:
+      op: fs_write
+      unless_path_glob: "outputs/**"
+  - id: process_exec_requires_approval
+    type: tool_group
+    group: process_exec
+    reason: "Process execution requires approval"
+  - id: network_requires_approval
+    type: tool_group
+    group: network
+    reason: "Network requires approval"
+  - id: llm_requires_approval
+    type: op_regex
+    pattern: "^(gemini_|deepseek_|openai_)"
+    reason: "External LLM requires approval (ollama is local)"
+  - id: telegram_requires_approval
+    type: tool_group
+    group: telegram
+    reason: "Messaging requires approval"

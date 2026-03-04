@@ -1,0 +1,24 @@
+{
+  "id": "conical_app",
+  "name": "NH Conical/Helix Example",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.conical_app.plugin",
+  "tool_groups": [
+    "domain_conical",
+    "dxf_export",
+    "fs_write"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "r_bottom": {"type": "number"},
+      "r_top": {"type": "number"},
+      "height": {"type": "number"},
+      "pitch": {"type": "number"},
+      "turns": {"type": "number"},
+      "segments_per_turn": {"type": "integer"}
+    },
+    "required": []
+  }
+}

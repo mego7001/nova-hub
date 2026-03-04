@@ -1,0 +1,99 @@
+﻿{
+    "generated_at":  "2026-02-22T01:47:15Z",
+    "root":  "d:\\nouva hub\\nova_hub_v1_release\\nova_hub",
+    "action":  "post_move_snapshot",
+    "items":  [
+                  {
+                      "path":  ".venv",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "workspace",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "tmp_pytest",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "tmp_pytest_work",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "tmp_runtime_env",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "tmp_pycache",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "tmp_compile_artifacts",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  ".pytest_cache",
+                      "exists":  false,
+                      "file_count":  0
+                  },
+                  {
+                      "path":  "__pycache__",
+                      "exists":  false,
+                      "file_count":  0
+                  }
+              ],
+    "moves":  [
+                  {
+                      "source":  ".venv",
+                      "destination":  "delete/venv",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "workspace",
+                      "destination":  "delete/workspace",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "tmp_pytest",
+                      "destination":  "delete/tmp_pytest",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "tmp_pytest_work",
+                      "destination":  "delete/tmp_pytest_work",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "tmp_runtime_env",
+                      "destination":  "delete/tmp_runtime_env",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "tmp_pycache",
+                      "destination":  "delete/tmp_pycache",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "tmp_compile_artifacts",
+                      "destination":  "delete/tmp_compile_artifacts",
+                      "moved":  true
+                  },
+                  {
+                      "source":  ".pytest_cache",
+                      "destination":  "delete/pytest_cache",
+                      "moved":  true
+                  },
+                  {
+                      "source":  "__pycache__",
+                      "destination":  "delete/__pycache__",
+                      "moved":  true
+                  }
+              ]
+}

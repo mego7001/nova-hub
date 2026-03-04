@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-02-06T06:03:24.100010Z",
+  "total": 3,
+  "passed": 3,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Record path created",
+      "passed": true,
+      "detail": "status=unavailable"
+    },
+    {
+      "name": "Offline STT",
+      "passed": true,
+      "detail": "STT unavailable (degraded mode ok)"
+    },
+    {
+      "name": "Offline TTS",
+      "passed": true,
+      "detail": "TTS unavailable (degraded mode ok)"
+    }
+  ],
+  "limitations": [
+    "Audio capture and TTS depend on optional local engines."
+  ]
+}

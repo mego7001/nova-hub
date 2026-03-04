@@ -1,0 +1,27 @@
+{
+  "id": "nesting_app",
+  "name": "NH Nesting Example",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.nesting_app.plugin",
+  "tool_groups": [
+    "domain_nesting",
+    "dxf_export",
+    "fs_write"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "sheet_w": {
+        "type": "number"
+      },
+      "sheet_h": {
+        "type": "number"
+      },
+      "gap": {
+        "type": "number"
+      }
+    },
+    "required": []
+  }
+}

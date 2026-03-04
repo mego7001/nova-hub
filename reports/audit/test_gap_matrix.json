@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-02-22T02:41:40Z",
+  "components": [
+    {
+      "component": "entrypoints",
+      "paths": [
+        "main.py",
+        "run_*.py",
+        "launchers"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P1",
+      "matched_tests": [
+        "test_chat_whatsapp_unified_input_wiring.py",
+        "test_docs_launch_smoke.py",
+        "test_entrypoint_wrappers.py",
+        "test_launchers_compat_smoke.py",
+        "test_main_dispatch.py",
+        "test_main_event_publisher_contract.py",
+        "test_main_hud_ui_selector.py",
+        "test_main_pylance_contracts.py",
+        "test_main_whatsapp_launch_path.py"
+      ]
+    },
+    {
+      "component": "ipc",
+      "paths": [
+        "core/ipc"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P1",
+      "matched_tests": [
+        "test_ipc_autospawn.py",
+        "test_ipc_chat_emits_events.py",
+        "test_ipc_chat_send_routing_debug.py",
+        "test_ipc_chat_send_smoke.py",
+        "test_ipc_events_channel_basic.py",
+        "test_ipc_reconnect_respawn.py",
+        "test_ipc_server_health.py",
+        "test_ipc_spawn_command_path.py",
+        "test_non_ipc_path_smoke.py"
+      ]
+    },
+    {
+      "component": "security",
+      "paths": [
+        "core/security",
+        "core/projects"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P1",
+      "matched_tests": [
+        "test_doctor_report.py",
+        "test_gating.py",
+        "test_project_manager_security.py"
+      ]
+    },
+    {
+      "component": "chat_and_routing",
+      "paths": [
+        "core/chat",
+        "core/conversation",
+        "core/ux"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P1",
+      "matched_tests": [
+        "test_chat_whatsapp_unified_input_wiring.py",
+        "test_hud_qml_chat_sessions.py",
+        "test_hud_qml_general_chat.py",
+        "test_ipc_chat_emits_events.py",
+        "test_ipc_chat_send_routing_debug.py",
+        "test_ipc_chat_send_smoke.py",
+        "test_session_history_get.py",
+        "test_ux_mode_routing.py",
+        "test_ux_task_modes.py",
+        "test_ux_tools_catalog.py"
+      ]
+    },
+    {
+      "component": "hud_qml",
+      "paths": [
+        "ui/hud_qml",
+        "ui/quick_panel"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P2",
+      "matched_tests": [
+        "test_hud_controller_candidate_models_bindable.py",
+        "test_hud_controller_no_duplicate_defs.py",
+        "test_hud_controller_voice_device_slot.py",
+        "test_hud_qml_chat_sessions.py",
+        "test_hud_qml_commandbar_handlers.py",
+        "test_hud_qml_controller.py",
+        "test_hud_qml_general_chat.py",
+        "test_hud_qml_geometry_adapter.py",
+        "test_hud_qml_jsonl_helpers.py",
+        "test_hud_qml_models.py",
+        "test_hud_qml_palette.py",
+        "test_hud_qml_popouts_wired.py",
+        "test_hud_qml_qa_panel_wired.py",
+        "test_hud_qml_qa_report.py",
+        "test_hud_qml_smoke.py",
+        "test_hud_qml_ux_wiring.py",
+        "test_hud_qml_v2_command_palette_keys.py",
+        "test_hud_qml_v2_drawer_parity.py",
+        "test_hud_qml_v2_offscreen_ironman.py",
+        "test_hud_qml_v2_voice_controls.py",
+        "test_hud_qml_voice.py",
+        "test_hud_qml_voice_panel_wired.py",
+        "test_voice_loop.py",
+        "test_voice_manager_config_update.py"
+      ]
+    },
+    {
+      "component": "ingest",
+      "paths": [
+        "core/ingest"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P2",
+      "matched_tests": [
+        "test_image_parser_ocr.py",
+        "test_ingest_manager_unified.py",
+        "test_ux_upload_policy.py"
+      ]
+    },
+    {
+      "component": "cad_pipeline",
+      "paths": [
+        "core/cad_pipeline"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P2",
+      "matched_tests": [
+        "test_cad_pipeline_tools.py",
+        "test_dxf_reader_bulge_preserves_curvature.py",
+        "test_pattern_projector_closed_inside_safe_zone_unchanged.py",
+        "test_pattern_projector_closed_loop_stays_closed_after_clip.py"
+      ]
+    },
+    {
+      "component": "llm_and_budget",
+      "paths": [
+        "core/llm"
+      ],
+      "status": "covered",
+      "priority_if_missing": "P2",
+      "matched_tests": [
+        "test_llm_budget_guard.py",
+        "test_llm_router_provider_calls.py",
+        "test_llm_routing_config.py",
+        "test_main_hud_ui_selector.py",
+        "test_selector_weighted_deterministic.py"
+      ]
+    }
+  ],
+  "missing_backlog": [],
+  "critical_open_count": 0
+}

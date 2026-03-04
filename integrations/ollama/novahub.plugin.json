@@ -1,0 +1,40 @@
+{
+    "id": "ollama",
+    "name": "Ollama Local Provider",
+    "version": "1.0.0",
+    "kind": "integration",
+    "entrypoint": "integrations.ollama.plugin",
+    "tool_groups": [
+        "ollama"
+    ],
+    "config_schema": {
+        "type": "object",
+        "properties": {
+            "enabled": {
+                "type": "boolean"
+            },
+            "model": {
+                "type": "string"
+            },
+            "model_general": {
+                "type": "string"
+            },
+            "model_code": {
+                "type": "string"
+            },
+            "model_vision": {
+                "type": "string"
+            },
+            "base_url": {
+                "type": "string"
+            },
+            "connect_timeout_sec": {
+                "type": "number"
+            },
+            "timeout_sec": {
+                "type": "integer"
+            }
+        },
+        "required": []
+    }
+}

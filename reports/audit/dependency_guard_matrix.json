@@ -1,0 +1,139 @@
+{
+  "generated_at_utc": "2026-02-22T05:55:11.685311Z",
+  "optional_packages": [
+    "ezdxf",
+    "shapely",
+    "numpy",
+    "cadquery",
+    "pyvista",
+    "faster_whisper",
+    "sounddevice",
+    "pyttsx3",
+    "ctranslate2",
+    "av"
+  ],
+  "records_count": 17,
+  "guarded_count": 10,
+  "unguarded_count": 7,
+  "records": [
+    {
+      "file": "nova_hub/core/cad_pipeline/dxf_generator.py",
+      "package": "ezdxf",
+      "line": 10,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/cad_pipeline/dxf_generator.py",
+      "package": "shapely",
+      "line": 104,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/cad_pipeline/dxf_handler.py",
+      "package": "ezdxf",
+      "line": 6,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/cad_pipeline/geometry_engine.py",
+      "package": "numpy",
+      "line": 5,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/cad_pipeline/panels_dxf.py",
+      "package": "ezdxf",
+      "line": 6,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/cad_pipeline/pattern_mapper.py",
+      "package": "shapely",
+      "line": 5,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/cad_pipeline/step_generator.py",
+      "package": "cadquery",
+      "line": 56,
+      "guarded": false,
+      "guard_hint": "No explicit import guard found in file"
+    },
+    {
+      "file": "nova_hub/core/geometry3d/preview.py",
+      "package": "numpy",
+      "line": 13,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/geometry3d/primitives.py",
+      "package": "numpy",
+      "line": 7,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/audio_io.py",
+      "package": "sounddevice",
+      "line": 74,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/engine.py",
+      "package": "faster_whisper",
+      "line": 18,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/engine.py",
+      "package": "numpy",
+      "line": 28,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/engine.py",
+      "package": "pyttsx3",
+      "line": 10,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/engine.py",
+      "package": "sounddevice",
+      "line": 29,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/providers/stt_faster_whisper.py",
+      "package": "ctranslate2",
+      "line": 168,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/providers/stt_faster_whisper.py",
+      "package": "faster_whisper",
+      "line": 122,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    },
+    {
+      "file": "nova_hub/core/voice/providers/tts_pyttsx3.py",
+      "package": "pyttsx3",
+      "line": 47,
+      "guarded": true,
+      "guard_hint": "ImportError/ModuleNotFoundError handling present in file"
+    }
+  ]
+}

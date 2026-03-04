@@ -1,0 +1,27 @@
+{
+  "id": "halftone_app",
+  "name": "NH Halftone Example",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.halftone_app.plugin",
+  "tool_groups": [
+    "domain_halftone",
+    "dxf_export",
+    "fs_write"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "grid_w": {
+        "type": "integer"
+      },
+      "grid_h": {
+        "type": "integer"
+      },
+      "max_r": {
+        "type": "number"
+      }
+    },
+    "required": []
+  }
+}

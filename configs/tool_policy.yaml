@@ -1,0 +1,36 @@
+version: 1
+defaults:
+  deny_by_default: true
+
+tool_groups:
+  fs_read:      { description: "Read-only filesystem", base_risk: 0.10 }
+  fs_write:     { description: "Write filesystem", base_risk: 0.55 }
+  process_exec: { description: "Execute local processes", base_risk: 0.85 }
+  git:          { description: "Git operations", base_risk: 0.40 }
+  network:      { description: "Outbound network", base_risk: 0.75 }
+  telegram:     { description: "Telegram Bot API", base_risk: 0.45 }
+  ollama:       { description: "Ollama local LLM", base_risk: 0.25 }
+  gemini:       { description: "Gemini API", base_risk: 0.55 }
+  deepseek:     { description: "DeepSeek API", base_risk: 0.55 }
+  openai:       { description: "OpenAI API", base_risk: 0.55 }
+  dxf_export:   { description: "DXF export", base_risk: 0.30 }
+  domain_nesting:  { description: "Nesting compute", base_risk: 0.15 }
+  domain_conical:  { description: "Conical/helix compute", base_risk: 0.20 }
+  domain_halftone: { description: "Halftone compute", base_risk: 0.20 }
+
+profiles:
+  minimal:
+    description: "Safe read-only"
+    allow: [fs_read]
+    require_approval: [fs_write, process_exec, network, git, telegram, ollama, gemini, deepseek, openai, dxf_export, domain_nesting, domain_conical, domain_halftone]
+
+  engineering:
+    description: "Engineering default"
+    allow: [fs_read, fs_write, git, telegram, ollama, gemini, deepseek, openai, dxf_export, domain_nesting, domain_conical, domain_halftone]
+    # fs_write is allowed; approvals.yaml decides when approval is required (e.g., outside outputs/)
+    require_approval: [process_exec, network, telegram, gemini, deepseek, openai]
+
+  full:
+    description: "All tools enabled (still guarded)"
+    allow: [fs_read, fs_write, process_exec, network, git, telegram, ollama, gemini, deepseek, openai, dxf_export, domain_nesting, domain_conical, domain_halftone]
+    require_approval: [process_exec, network]

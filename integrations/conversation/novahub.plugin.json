@@ -1,0 +1,13 @@
+{
+  "id": "conversation",
+  "name": "Conversation",
+  "version": "0.1.0",
+  "kind": "integration",
+  "entrypoint": "integrations.conversation.plugin",
+  "tool_groups": ["fs_read", "fs_write", "process_exec", "network"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

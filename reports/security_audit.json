@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-02-06T06:04:23.669342Z",
+  "workspace_root": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace",
+  "project_id": "",
+  "summary": {
+    "OK": 7,
+    "WARNING": 1,
+    "CRITICAL": 0
+  },
+  "findings": [
+    {
+      "checkId": "WS_BOUNDARY_OK",
+      "severity": "OK",
+      "title": "Workspace boundary OK",
+      "detail": "Workspace root is under base dir: C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace"
+    },
+    {
+      "checkId": "WS_SYMLINK_ROOT_OK",
+      "severity": "OK",
+      "title": "Workspace root is not a symlink",
+      "detail": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace is not a symlink/junction."
+    },
+    {
+      "checkId": "SECRETS_SCAN_OK",
+      "severity": "OK",
+      "title": "No obvious secrets in scanned artifacts",
+      "detail": "Reports/transcripts/extracted/docs scans did not find secret-like patterns."
+    },
+    {
+      "checkId": "ALLOWLIST_SHELLS_OK",
+      "severity": "OK",
+      "title": "Shell executables are denied",
+      "detail": "Process allowlist denies cmd/powershell/pwsh."
+    },
+    {
+      "checkId": "ALLOWLIST_PYTHON_C_OK",
+      "severity": "OK",
+      "title": "python -c is denied",
+      "detail": "Process allowlist rejects python -c."
+    },
+    {
+      "checkId": "ONLINE_PREF_OFF",
+      "severity": "OK",
+      "title": "Online AI disabled by default",
+      "detail": "No projects have online_enabled set to true."
+    },
+    {
+      "checkId": "ARTIFACTS_EXECUTABLES",
+      "severity": "WARNING",
+      "title": "Executable artifacts found",
+      "detail": "Executable/binary artifacts can expand attack surface.",
+      "remediation": "Remove unexpected executables from workspace.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace\\projects\\novahub_review-6c9090df\\working\\nova_hub\\launchers\\open_quick_links.bat"
+        },
+        {
+          "path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace\\projects\\novahub_review-6c9090df\\working\\nova_hub\\launchers\\open_quick_links.ps1"
+        },
+        {
+          "path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace\\projects\\novahub_review-6c9090df\\working\\nova_hub\\launchers\\start_novahub.bat"
+        },
+        {
+          "path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub\\workspace\\projects\\novahub_review-6c9090df\\working\\nova_hub\\launchers\\start_novahub.ps1"
+        }
+      ]
+    },
+    {
+      "checkId": "PERMS_WINDOWS_LIMITED",
+      "severity": "OK",
+      "title": "Windows permission checks limited",
+      "detail": "ACL checks are limited on Windows in this audit. Review workspace permissions manually."
+    }
+  ],
+  "security_gate": {
+    "blocked_online_project": false,
+    "critical_findings": [],
+    "last_audit_at": "2026-02-06T06:04:23.669331Z"
+  }
+}

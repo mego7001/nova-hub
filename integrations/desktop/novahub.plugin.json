@@ -1,0 +1,13 @@
+{
+  "id": "desktop",
+  "name": "Desktop",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.desktop.plugin",
+  "tool_groups": ["process_exec", "fs_read", "fs_write"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

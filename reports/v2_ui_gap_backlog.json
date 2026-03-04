@@ -1,0 +1,70 @@
+{
+  "generated_at_utc": "2026-02-22T00:00:00Z",
+  "scope": [
+    "HUD v2",
+    "QuickPanel v2"
+  ],
+  "policy": "Report+Reality",
+  "status": "closed",
+  "open_gaps": [],
+  "closed_items": [
+    {
+      "id": "V2-GAP-001",
+      "title": "QuickPanel v2 palette open_drawer handling",
+      "resolution": "Implemented open_drawer branch in quick panel command handler.",
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:116",
+        "nova_hub/tests/test_quick_panel_v2_runtime_search.py:6"
+      ]
+    },
+    {
+      "id": "V2-GAP-002",
+      "title": "QuickPanel v2 timeline/history feed surface",
+      "resolution": "Added History drawer with timeline list and summary + refresh.",
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:390",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:66"
+      ]
+    },
+    {
+      "id": "V2-GAP-003",
+      "title": "QuickPanel v2 attach summary surface",
+      "resolution": "Added Attach drawer summary label and attach summary list.",
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:226",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:50"
+      ]
+    },
+    {
+      "id": "V2-GAP-004",
+      "title": "QuickPanel v2 Ollama session model override",
+      "resolution": "Added Ollama model combo wired to setOllamaSessionModel.",
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:300",
+        "nova_hub/tests/test_quick_panel_v2_runtime_search.py:24"
+      ]
+    },
+    {
+      "id": "V2-GAP-005",
+      "title": "QuickPanel v2 voice device picker",
+      "resolution": "Added voice device combo + refresh + set_voice_device wiring.",
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:558",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:76"
+      ]
+    },
+    {
+      "id": "V2-GAP-006",
+      "title": "QuickPanel v2 tools badges/reasons list",
+      "resolution": "Added tools catalog list surface showing group/badge/reason.",
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:162",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:41"
+      ]
+    }
+  ],
+  "closure_plan": {
+    "target_phase": "V2 Parity Closure",
+    "success_definition": "All identified V2 parity gaps from the previous audit are closed with runtime and test evidence."
+  }
+}

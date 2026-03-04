@@ -1,0 +1,29 @@
+{
+  "id": "deepseek",
+  "name": "DeepSeek API (OpenAI-compatible)",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.deepseek.plugin",
+  "tool_groups": [
+    "deepseek",
+    "network"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "api_key": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      },
+      "base_url": {
+        "type": "string"
+      },
+      "timeout_sec": {
+        "type": "integer"
+      }
+    },
+    "required": []
+  }
+}

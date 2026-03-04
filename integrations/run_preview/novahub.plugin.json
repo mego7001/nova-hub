@@ -1,0 +1,8 @@
+﻿{
+  "id": "run_preview",
+  "name": "Run Preview",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.run_preview.plugin",
+  "tool_groups": ["process_exec", "fs_read", "fs_write"]
+}

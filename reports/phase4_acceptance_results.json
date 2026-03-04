@@ -1,0 +1,90 @@
+{
+  "generated_at_utc": "2026-02-22T00:00:00Z",
+  "phase": "phase4_operational_closure",
+  "formula": "accepted_criteria/total_criteria",
+  "baseline_operational_percent": 76.6,
+  "final_operational_percent": 100.0,
+  "items": [
+    {
+      "id": 1,
+      "name": "release_gate_official",
+      "baseline_percent": 100.0,
+      "accepted_criteria": 4,
+      "total_criteria": 4,
+      "final_percent": 100.0
+    },
+    {
+      "id": 2,
+      "name": "attach_ingest_matrix",
+      "baseline_percent": 100.0,
+      "accepted_criteria": 4,
+      "total_criteria": 4,
+      "final_percent": 100.0
+    },
+    {
+      "id": 3,
+      "name": "llm_local_first_and_fallback",
+      "baseline_percent": 92.0,
+      "accepted_criteria": 5,
+      "total_criteria": 5,
+      "final_percent": 100.0
+    },
+    {
+      "id": 4,
+      "name": "memory_tiers_ttl_migration_search",
+      "baseline_percent": 75.0,
+      "accepted_criteria": 4,
+      "total_criteria": 4,
+      "final_percent": 100.0
+    },
+    {
+      "id": 5,
+      "name": "tools_reasons_policy_deps_secrets_context",
+      "baseline_percent": 50.0,
+      "accepted_criteria": 4,
+      "total_criteria": 4,
+      "final_percent": 100.0
+    },
+    {
+      "id": 6,
+      "name": "voice_productization",
+      "baseline_percent": 56.0,
+      "accepted_criteria": 5,
+      "total_criteria": 5,
+      "final_percent": 100.0
+    },
+    {
+      "id": 7,
+      "name": "cross_ui_parity",
+      "baseline_percent": 75.0,
+      "accepted_criteria": 4,
+      "total_criteria": 4,
+      "final_percent": 100.0
+    },
+    {
+      "id": 8,
+      "name": "timeline_telemetry_scalability",
+      "baseline_percent": 88.0,
+      "accepted_criteria": 4,
+      "total_criteria": 4,
+      "final_percent": 100.0
+    }
+  ],
+  "verification": {
+    "py_compile": "pass",
+    "pytest_full": {
+      "status": "pass",
+      "summary": "246 passed"
+    },
+    "offscreen_hud_v2": "pass",
+    "offscreen_quick_panel_v2": "pass",
+    "smoke_test": "pass",
+    "doctor_report": "pass",
+    "memory_search_validation": "pass",
+    "ollama_health_ping": {
+      "command_status": "pass",
+      "runtime_status": "unavailable"
+    }
+  }
+}
+

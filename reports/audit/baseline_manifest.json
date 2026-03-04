@@ -1,0 +1,2071 @@
+{
+  "generated_at": "2026-02-22T02:41:29Z",
+  "root": "D:\\nouva hub\\nova_hub_v1_release\\nova_hub",
+  "file_count": 344,
+  "entries": [
+    {
+      "path": "configs/approvals.yaml",
+      "size_bytes": 1751,
+      "sha256": "514f6fed06facd937088afd3ed01c0aeac22107a817b7f84e34c1a80a21e606e",
+      "line_count": 64
+    },
+    {
+      "path": "configs/desktop.yaml",
+      "size_bytes": 173,
+      "sha256": "fdd799b0439fd07178c01d5fc72b0cdce5cf231351271a904d54341d4792b173",
+      "line_count": 4
+    },
+    {
+      "path": "configs/llm_routing.yaml",
+      "size_bytes": 1170,
+      "sha256": "1cd08c3125777f3cdc473fa59f761b949dfc19761305bfe6b003b1386b5c9381",
+      "line_count": 53
+    },
+    {
+      "path": "configs/plugins_enabled.yaml",
+      "size_bytes": 2147,
+      "sha256": "508f51a7b6e40037cfe907f35bc2e169a96e1b4a90b97c867ead024c9073ee18",
+      "line_count": 106
+    },
+    {
+      "path": "configs/release_scope.yaml",
+      "size_bytes": 961,
+      "sha256": "bfead2c4cd03264614d22475f41448c8e641846e3e343b9d409e0134c8fc244a",
+      "line_count": 32
+    },
+    {
+      "path": "configs/tool_policy.yaml",
+      "size_bytes": 1919,
+      "sha256": "50f4f0264d8a9c10e2fea087356c738b59291c61a97a5723a6c0c6527ef989a6",
+      "line_count": 37
+    },
+    {
+      "path": "core/analyze/dependency_graph.py",
+      "size_bytes": 1361,
+      "sha256": "5384d6fe12f5754a5fce1c1760a4332706ba2e395b2615272cd64aa7813f2f5e",
+      "line_count": 34
+    },
+    {
+      "path": "core/analyze/entrypoints.py",
+      "size_bytes": 1276,
+      "sha256": "64bccbf9570f6d4ce31ab422106e15cc85aa3d53bdedc5742d55fb6a44a41b57",
+      "line_count": 36
+    },
+    {
+      "path": "core/analyze/risk.py",
+      "size_bytes": 2296,
+      "sha256": "6ce191f1e7fd9c9608f635778326c4827c9a68790618bdaa597684a15496a970",
+      "line_count": 63
+    },
+    {
+      "path": "core/assistant/executor.py",
+      "size_bytes": 1758,
+      "sha256": "26948119688642a92fe8e844145d4f68861f0dfdd0e2fad4443c6199086bfa31",
+      "line_count": 48
+    },
+    {
+      "path": "core/assistant/suggestions.py",
+      "size_bytes": 4549,
+      "sha256": "f91bf898d74b7afd421c8d089cbc78521808b0fe25e59bd26c90e794efbbb9b8",
+      "line_count": 120
+    },
+    {
+      "path": "core/audit_spine.py",
+      "size_bytes": 8922,
+      "sha256": "3bf5579fa27c15505aceade04d074a39e975ffc55ae95c92dabd86442ef18431",
+      "line_count": 265
+    },
+    {
+      "path": "core/cad_pipeline/__init__.py",
+      "size_bytes": 700,
+      "sha256": "d14cfa80815224060ece9ed559f5ae248e63a9f958b699a7b791595aa8620151",
+      "line_count": 24
+    },
+    {
+      "path": "core/cad_pipeline/dxf_generator.py",
+      "size_bytes": 5099,
+      "sha256": "c3bb7ebdcb64b920cf15b5aadaf87c4528e2d5fdba3bdb1f09951eb1ec0d6472",
+      "line_count": 162
+    },
+    {
+      "path": "core/cad_pipeline/dxf_handler.py",
+      "size_bytes": 33653,
+      "sha256": "536e837c097a524ab784b6b5f8d1622c9676449b0afdbccaf2773b88cbe5ea4f",
+      "line_count": 787
+    },
+    {
+      "path": "core/cad_pipeline/geometry_engine.py",
+      "size_bytes": 21279,
+      "sha256": "d3e5d1547d02e7ba87bd05654e6561f7a30879efb8eae662ceaf0bd6c9b8012a",
+      "line_count": 498
+    },
+    {
+      "path": "core/cad_pipeline/panels_dxf.py",
+      "size_bytes": 20446,
+      "sha256": "762d73fc8fdc8d68074942c5d8825d1c94d0d9fb0806e21510e9cd5f7edae1bf",
+      "line_count": 589
+    },
+    {
+      "path": "core/cad_pipeline/pattern_mapper.py",
+      "size_bytes": 34833,
+      "sha256": "342c6934edb44993f6a65b325e9e7c8f4e7fcc342fa6c788aef601fcb4d5b8c9",
+      "line_count": 826
+    },
+    {
+      "path": "core/cad_pipeline/qa_report.py",
+      "size_bytes": 16064,
+      "sha256": "8088bba6da37c4aaf9d4d0b1088f9e2194f45706733bbf985b091a6acb50dc83",
+      "line_count": 439
+    },
+    {
+      "path": "core/cad_pipeline/step_generator.py",
+      "size_bytes": 2963,
+      "sha256": "93bd025e44a1dabe84462ef8850d86bcac358c59cd94ec717bfcd1b9be4fa7ba",
+      "line_count": 92
+    },
+    {
+      "path": "core/chat/intents.py",
+      "size_bytes": 3942,
+      "sha256": "2445e2830c94015450cc9e88d88b02fed0d7c5703e4d86ccad48f1d6396d06c2",
+      "line_count": 120
+    },
+    {
+      "path": "core/chat/orchestrator.py",
+      "size_bytes": 60819,
+      "sha256": "57c54b40c804433ac978349f4f2535ae560d7c17df0df244295a7cfbd41e5dd0",
+      "line_count": 1167
+    },
+    {
+      "path": "core/chat/state.py",
+      "size_bytes": 3093,
+      "sha256": "c3c8f6be2ac4bc5f0b9fd4dd9fcdce2a9fe66d5ac7cb992adf359928a3132a76",
+      "line_count": 75
+    },
+    {
+      "path": "core/conversation/brain.py",
+      "size_bytes": 9924,
+      "sha256": "e09e825746f605c3179c8553f8f8e274102cd928b4e63be9b8149f9395d162c0",
+      "line_count": 241
+    },
+    {
+      "path": "core/conversation/confirmation.py",
+      "size_bytes": 2562,
+      "sha256": "015b485ffcee07dbc0e1f8c4a7b0ccee9e7a15896811f2f38e1cee615fc15b62",
+      "line_count": 86
+    },
+    {
+      "path": "core/conversation/intent_parser.py",
+      "size_bytes": 2109,
+      "sha256": "6ed6028f43df8057b396e1a307b5877628c9e77598f2a626dc66a60b2af4c2ca",
+      "line_count": 75
+    },
+    {
+      "path": "core/conversation/jarvis_core.py",
+      "size_bytes": 10091,
+      "sha256": "1e058b21d5395e03b2690c6a30a139cd6ba055026ec95b662b131f963c7b09c9",
+      "line_count": 241
+    },
+    {
+      "path": "core/conversation/prefs.py",
+      "size_bytes": 2390,
+      "sha256": "733e3ff5c3d9c09c3b4ea032ae036fc42c4e48b4c430fdfd01e2662503640eca",
+      "line_count": 64
+    },
+    {
+      "path": "core/engineering/__init__.py",
+      "size_bytes": 133,
+      "sha256": "232f633864e2fa772baa7ff2c5098fbdc3fc8538041be0b185c21dbbabdf674d",
+      "line_count": 3
+    },
+    {
+      "path": "core/engineering/explain.py",
+      "size_bytes": 3594,
+      "sha256": "38acbc40dc4b65e88ea39194bfd6bcb11f5bb6603e50c0a94f8e22537dcc25b8",
+      "line_count": 90
+    },
+    {
+      "path": "core/engineering/extract.py",
+      "size_bytes": 17302,
+      "sha256": "9bdd89ab19f6ea638eb72f6711037578fa4a3640f30d6d8531a08c38871d5fed",
+      "line_count": 456
+    },
+    {
+      "path": "core/engineering/limits.py",
+      "size_bytes": 718,
+      "sha256": "248fca09c832de68388f98054ed2cfac067e0ceebd339b9c09c9e14f1717c2f1",
+      "line_count": 33
+    },
+    {
+      "path": "core/engineering/loads.py",
+      "size_bytes": 1116,
+      "sha256": "62766be6530161f1b8675aac0bdde6c2261c899bb83b418a7fb607886d7f8849",
+      "line_count": 48
+    },
+    {
+      "path": "core/engineering/materials.py",
+      "size_bytes": 2898,
+      "sha256": "559e082e31a16ddb767dd9f26c44ee88a9e11bfb96facbc698b5395e4d655ac2",
+      "line_count": 69
+    },
+    {
+      "path": "core/engineering/model.py",
+      "size_bytes": 7082,
+      "sha256": "d76dcc0b83e0d1ce40a850cb2b96ef801a900bff76195e4206011f2cbc9b6696",
+      "line_count": 238
+    },
+    {
+      "path": "core/engineering/risk.py",
+      "size_bytes": 843,
+      "sha256": "15ae6bc79ed84f3066b71f66d8b78056b7e32ba23acbfc6091347973eb589658",
+      "line_count": 27
+    },
+    {
+      "path": "core/engineering/rules.py",
+      "size_bytes": 6795,
+      "sha256": "1917cc787be0bfe862a11ced437ff178b25cb94af1bb3fc572bde9e6aba5d7c8",
+      "line_count": 166
+    },
+    {
+      "path": "core/engineering/store.py",
+      "size_bytes": 3444,
+      "sha256": "e661d231d72bdd246b972377fc8aa440d24ebf4b5d315a34b6f679059ba26270",
+      "line_count": 96
+    },
+    {
+      "path": "core/engineering/tolerances.py",
+      "size_bytes": 1386,
+      "sha256": "739b53ab772e008225166a553bf0db5b572c984360da4ce4b36e6f8a357eeaae",
+      "line_count": 55
+    },
+    {
+      "path": "core/engineering/vision_geometry.py",
+      "size_bytes": 1679,
+      "sha256": "75526ab9bf9ff0cbe5bab1969d5cd323d4e49116aa7d4a0f01da7574ac65e86c",
+      "line_count": 49
+    },
+    {
+      "path": "core/fs/safe_workspace_writer.py",
+      "size_bytes": 2799,
+      "sha256": "5d7617f8cd3b9978068f3f339fb78c8a73661a097bd6ea1459772c37d8756709",
+      "line_count": 67
+    },
+    {
+      "path": "core/geometry3d/__init__.py",
+      "size_bytes": 132,
+      "sha256": "d3f6672b0cbf7a58406e3a31969c93696d1c25d1377f03c99a896de9c93f1fa8",
+      "line_count": 3
+    },
+    {
+      "path": "core/geometry3d/assembly.py",
+      "size_bytes": 1130,
+      "sha256": "69ad08ff592539d8ffe54361cd31efb5af36b340e8e3be4c7444f0b1c3e44b0a",
+      "line_count": 39
+    },
+    {
+      "path": "core/geometry3d/export.py",
+      "size_bytes": 2022,
+      "sha256": "30e12ecbdd79daaf103fed5df5b7f23f13c9a9f1461514689de718c6be0f2866",
+      "line_count": 62
+    },
+    {
+      "path": "core/geometry3d/intent.py",
+      "size_bytes": 9623,
+      "sha256": "a426c6566caf70395910bf996f520742a9bac7215f54b82abdc590731bfc666b",
+      "line_count": 289
+    },
+    {
+      "path": "core/geometry3d/limits.py",
+      "size_bytes": 1060,
+      "sha256": "6394ef70f916791c12d2621bb3e3a4081f3a963f20da98b729c4711996ea4760",
+      "line_count": 43
+    },
+    {
+      "path": "core/geometry3d/preview.py",
+      "size_bytes": 6870,
+      "sha256": "cc00ac0a3ba6f81f3a3143f1eec7e437e6c9a20ceaf377a61f1ef020032d173c",
+      "line_count": 193
+    },
+    {
+      "path": "core/geometry3d/primitives.py",
+      "size_bytes": 13393,
+      "sha256": "a119d10b26335549fb3302ea22d9fef0be72ca3f114db281020bff4f0f6a5d78",
+      "line_count": 324
+    },
+    {
+      "path": "core/geometry3d/reasoning.py",
+      "size_bytes": 3495,
+      "sha256": "f305cd2db51e721647936f56c340ec222f1266125b2197204c73f27ef0f18e8f",
+      "line_count": 89
+    },
+    {
+      "path": "core/geometry3d/store.py",
+      "size_bytes": 3817,
+      "sha256": "35a5f02b1285f30487c3bfa07e5d7b7ab0e89ea3d3c600c1c0fc3c4880755e67",
+      "line_count": 101
+    },
+    {
+      "path": "core/ingest/file_types.py",
+      "size_bytes": 1222,
+      "sha256": "792de32d096f50cd5d57cf71673642354f733b7affd271a3e52a0da410e3de87",
+      "line_count": 45
+    },
+    {
+      "path": "core/ingest/index_store.py",
+      "size_bytes": 5206,
+      "sha256": "1fb28ec801cde63b3fdfd815b6d05f46694092e54100fcf69ecc3270b4ecaf8c",
+      "line_count": 132
+    },
+    {
+      "path": "core/ingest/ingest_manager.py",
+      "size_bytes": 17435,
+      "sha256": "61b940ad85995b9ef0734db97317b4fdd4db8668b6d8936b854967a43cde0be5",
+      "line_count": 429
+    },
+    {
+      "path": "core/ingest/parsers/docx_parser.py",
+      "size_bytes": 586,
+      "sha256": "e95eab63ad32cbed4adc08eb7ba0a5ca6c417b0a7d13d7a198ed10e604d0f5dc",
+      "line_count": 16
+    },
+    {
+      "path": "core/ingest/parsers/image_parser.py",
+      "size_bytes": 3113,
+      "sha256": "0ef254e6415e62689bd40bbf5cde5030d290009bd018da80e698080763ec98f1",
+      "line_count": 100
+    },
+    {
+      "path": "core/ingest/parsers/pdf_parser.py",
+      "size_bytes": 631,
+      "sha256": "9b571ab683e0447ad40b0410be7bfe6b9583c5c53246a43e7b2ec432d25aab1d",
+      "line_count": 18
+    },
+    {
+      "path": "core/ingest/parsers/text_parser.py",
+      "size_bytes": 420,
+      "sha256": "5da8d9ba44a5306454ce3e24481ea6bdedbad528fec3cf909239184189d38619",
+      "line_count": 12
+    },
+    {
+      "path": "core/ingest/parsers/xlsx_parser.py",
+      "size_bytes": 972,
+      "sha256": "387e9f5efae2b56f085e29d45dcc3e455bdb97b2376dd05211fcce7a4c93edec",
+      "line_count": 24
+    },
+    {
+      "path": "core/ingest/unzip.py",
+      "size_bytes": 1395,
+      "sha256": "3925f1c6f2d7ba889792f33f1f600449005093792e04d0f84cddfd06f889ad79",
+      "line_count": 38
+    },
+    {
+      "path": "core/ipc/__init__.py",
+      "size_bytes": 596,
+      "sha256": "d9ede5f970227b79f640d2d1d407665e8ffd6716dedde26d5893dc2d7ddf8904",
+      "line_count": 20
+    },
+    {
+      "path": "core/ipc/client.py",
+      "size_bytes": 11689,
+      "sha256": "db50b25d22fd1cb3bdb8d4e87b6f775bdf50466199372960487222e057e4a000",
+      "line_count": 288
+    },
+    {
+      "path": "core/ipc/health.py",
+      "size_bytes": 455,
+      "sha256": "846b0f3c0493ff47feeafbdf56175e57ffd26af9b7b47cba46a3794d1402877a",
+      "line_count": 18
+    },
+    {
+      "path": "core/ipc/protocol.py",
+      "size_bytes": 3390,
+      "sha256": "30767823bd08eff01a787e12c2371328d09e293d126293e4ca2a24011c16121b",
+      "line_count": 120
+    },
+    {
+      "path": "core/ipc/server.py",
+      "size_bytes": 12254,
+      "sha256": "9648e7a8da1def11050e246081af40ea560f72364ee94b60f72a68ac2a4af1aa",
+      "line_count": 335
+    },
+    {
+      "path": "core/ipc/service.py",
+      "size_bytes": 28605,
+      "sha256": "55ffd1334a41e2d3ec14c6aa4df4d8b59a77c1a93abc938da6db848e28649651",
+      "line_count": 615
+    },
+    {
+      "path": "core/ipc/spawn.py",
+      "size_bytes": 14293,
+      "sha256": "b0e03f2f9ceb73804ccd6b90f05f143f57d966ce0ac8fbb959985b1a5637ec4c",
+      "line_count": 433
+    },
+    {
+      "path": "core/jobs/controller.py",
+      "size_bytes": 22244,
+      "sha256": "0a43b82339fa4cd58dc7429ccbbfbf64b997d63a4c301ec98583ab0de832704c",
+      "line_count": 485
+    },
+    {
+      "path": "core/jobs/models.py",
+      "size_bytes": 4447,
+      "sha256": "d443d7ac991a06f04755de6522563842ffb54a0d0152b631e7d74a770888e3c6",
+      "line_count": 111
+    },
+    {
+      "path": "core/jobs/storage.py",
+      "size_bytes": 2769,
+      "sha256": "10ecdb8d78660b212eac687bb39c57a5f2f20f0a5cd5b56057a928b6bd769835",
+      "line_count": 70
+    },
+    {
+      "path": "core/language/__init__.py",
+      "size_bytes": 61,
+      "sha256": "3c4fd4f0af29c62eba888e698c528e6011c33886de8e5037c63857664b7f3186",
+      "line_count": 3
+    },
+    {
+      "path": "core/language/normalization.py",
+      "size_bytes": 712,
+      "sha256": "550df14d75b7cfb1a506ebf1177b7434ca21b9224c2f32e37bda7ee7883f1955",
+      "line_count": 33
+    },
+    {
+      "path": "core/llm/online_policy.py",
+      "size_bytes": 3545,
+      "sha256": "4b50dfbc33b9cf9bcc68da4492666bc77d310299191169a6c17a26f7de967627",
+      "line_count": 104
+    },
+    {
+      "path": "core/llm/router.py",
+      "size_bytes": 27344,
+      "sha256": "8416d4ec1bb26527417f15d9115d54bcae7392afd73fa6b801ef6c6c055b1e36",
+      "line_count": 690
+    },
+    {
+      "path": "core/llm/selection_policy.py",
+      "size_bytes": 6030,
+      "sha256": "4887604a2b8140e2955fefc3926aa999b4020d94b5d3de0a91f8ca261d08c06b",
+      "line_count": 176
+    },
+    {
+      "path": "core/llm/selector.py",
+      "size_bytes": 7103,
+      "sha256": "96813966fa70bf940466aee41d3023aebfadd2c6ce0c3338c3432a41a9e87d9f",
+      "line_count": 188
+    },
+    {
+      "path": "core/permission_guard/approval_flow.py",
+      "size_bytes": 4364,
+      "sha256": "e6746e6185a4d808bb1c9f164cda2432111f8793326b0954c81e01fa1f1ac55e",
+      "line_count": 96
+    },
+    {
+      "path": "core/permission_guard/policies.py",
+      "size_bytes": 576,
+      "sha256": "2ef94df728a8fd743c8f5dcdcddaa98edf23614721f61c66d63c2175a0518ee0",
+      "line_count": 25
+    },
+    {
+      "path": "core/permission_guard/risk.py",
+      "size_bytes": 1129,
+      "sha256": "cfb8227c4439b6e4e0652b75264285d1f049ab83b56ad27fc27581e71b4fe42f",
+      "line_count": 31
+    },
+    {
+      "path": "core/permission_guard/tool_policy.py",
+      "size_bytes": 2527,
+      "sha256": "3c2c03ef9edfc550f544aaeb30f2d8c018de3cc17f6f019f9a7ccdccbc083757",
+      "line_count": 58
+    },
+    {
+      "path": "core/plugin_engine/loader.py",
+      "size_bytes": 1928,
+      "sha256": "1286e6ab45d5f235549b1e9ee9ea5793d09897490fe75611c5e3adbd30937170",
+      "line_count": 55
+    },
+    {
+      "path": "core/plugin_engine/manifest.py",
+      "size_bytes": 1114,
+      "sha256": "8b1283b13b60b01fad898df4ef8ac4655d2ccf9e6fc882992c1c39882dc09d34",
+      "line_count": 33
+    },
+    {
+      "path": "core/plugin_engine/registry.py",
+      "size_bytes": 1432,
+      "sha256": "b3ec42270be3b36cb6f65ec0bceca6e004d457524f0f9dcdecd8bfc09da1374a",
+      "line_count": 47
+    },
+    {
+      "path": "core/plugin_engine/schema.py",
+      "size_bytes": 1313,
+      "sha256": "dc374e2730b89ce649c243b93e8cf7d0c1a4d171dc84c862f5d388a99a393654",
+      "line_count": 36
+    },
+    {
+      "path": "core/portable/paths.py",
+      "size_bytes": 1470,
+      "sha256": "6475f5b37849706bc154eed112ab30fa8f9b41e67b74c2a029aab27f235a8c6b",
+      "line_count": 57
+    },
+    {
+      "path": "core/projects/manager.py",
+      "size_bytes": 13065,
+      "sha256": "fe00f27e84621cc59e2e745f66086e52eb372ebee5f75e4efcf91bea9cc35d4e",
+      "line_count": 327
+    },
+    {
+      "path": "core/projects/models.py",
+      "size_bytes": 2465,
+      "sha256": "f68f482ee66394ab6132d46f4bf4e79eccf8144df37ee2c4f8959a0ba62e20bb",
+      "line_count": 80
+    },
+    {
+      "path": "core/projects/storage.py",
+      "size_bytes": 1522,
+      "sha256": "4736092369b9375ed6c4b0b2c807ecb364f88ff5b312d2846c5bc9d066822860",
+      "line_count": 56
+    },
+    {
+      "path": "core/reasoning/agent.py",
+      "size_bytes": 5530,
+      "sha256": "91b02865b537649c02a489084f985ba9ec88877ab6ff0d788e17ed46e9ef961e",
+      "line_count": 151
+    },
+    {
+      "path": "core/records/__init__.py",
+      "size_bytes": 161,
+      "sha256": "97423380601c8bf142ad7cf6dcc65ffe92636823700775681e8779a147ed3945",
+      "line_count": 4
+    },
+    {
+      "path": "core/records/record_store.py",
+      "size_bytes": 5597,
+      "sha256": "235a613d1686fcf1509f843638a26366647ee7b3fbb5e08eb886a7d8b2401e57",
+      "line_count": 170
+    },
+    {
+      "path": "core/reporting/writer.py",
+      "size_bytes": 2595,
+      "sha256": "deb9ae6c452797efb0c8653d287cb770df4bbd4a415e44b05335c26906af8814",
+      "line_count": 59
+    },
+    {
+      "path": "core/retrieval/search.py",
+      "size_bytes": 2027,
+      "sha256": "329f60e3872c2e0cbdc6c63e6feee5668614b12e4afcbe531e945db130f2a3b4",
+      "line_count": 67
+    },
+    {
+      "path": "core/run/smart_runner.py",
+      "size_bytes": 693,
+      "sha256": "9376dff5d2c994da3fcce0769db9d0f383bc510f646ff8c49b2ec8c14cd24a01",
+      "line_count": 27
+    },
+    {
+      "path": "core/security/api_importer.py",
+      "size_bytes": 3167,
+      "sha256": "3a682220f7cc379d98f58adb978c6a92285303c9c4b6f3944b7e2a198058bb4d",
+      "line_count": 91
+    },
+    {
+      "path": "core/security/online_mode.py",
+      "size_bytes": 372,
+      "sha256": "97a3bfdac10e9cb6b704f00a6081709a6d529d0aa66122083986f49486ddad09",
+      "line_count": 14
+    },
+    {
+      "path": "core/security/process_allowlist.py",
+      "size_bytes": 1710,
+      "sha256": "fdcd8152ae84508280cd2384bbcf6991b9de0b3096f43196ec158fadef4c3ea1",
+      "line_count": 52
+    },
+    {
+      "path": "core/security/required_secrets.py",
+      "size_bytes": 1107,
+      "sha256": "99f3ee28f69345df318adc9597517ae46fcfa068e1a5fa4901380483aa10b653",
+      "line_count": 43
+    },
+    {
+      "path": "core/security/secrets.py",
+      "size_bytes": 5814,
+      "sha256": "ed2f5390cd649f86147e436beffbf0fcf8602bfe20eba12d182ba5fa6f4a6837",
+      "line_count": 146
+    },
+    {
+      "path": "core/security/security_doctor.py",
+      "size_bytes": 17637,
+      "sha256": "dd12272a986675169e7c1235c9936bf52d5553489f4d2c56892808eb320554dc",
+      "line_count": 478
+    },
+    {
+      "path": "core/security/status.py",
+      "size_bytes": 1444,
+      "sha256": "32b1712b7fb713e0b53fe971353b9c692357078e62639cc43a5e3ed81c544afd",
+      "line_count": 41
+    },
+    {
+      "path": "core/sketch/__init__.py",
+      "size_bytes": 400,
+      "sha256": "b1b0b7a429b14914aecffe410bebdba94a61d978ac9aa6b71d1fa64dede28f93",
+      "line_count": 17
+    },
+    {
+      "path": "core/sketch/dxf.py",
+      "size_bytes": 2247,
+      "sha256": "b698ca87ae6982b403bd816d528c7da37d967cc8d066b1acc211effcfa25b335",
+      "line_count": 92
+    },
+    {
+      "path": "core/sketch/model.py",
+      "size_bytes": 1703,
+      "sha256": "bd10f05a8bb2301ab2d64ccfd8663b6025b55d46c7c4459e56ffc59e8cb3e16b",
+      "line_count": 67
+    },
+    {
+      "path": "core/sketch/parser.py",
+      "size_bytes": 4703,
+      "sha256": "775861e6a7fb8b51697d73848c714873f406d73c1bdff2c4b4e4f2d5528e263b",
+      "line_count": 138
+    },
+    {
+      "path": "core/sketch/renderer.py",
+      "size_bytes": 2591,
+      "sha256": "ecff34918db309b2ecba992ec836d45b4b820d2cdd84246ae3f02b01d64fa2c5",
+      "line_count": 71
+    },
+    {
+      "path": "core/sketch/store.py",
+      "size_bytes": 2961,
+      "sha256": "79b23f56de7373cc7986a5c026966b30cbadc7601e61195ff4727dfc1af10056",
+      "line_count": 80
+    },
+    {
+      "path": "core/system_state_machine.py",
+      "size_bytes": 3008,
+      "sha256": "10f7d72af1ab94c674061de5be37349c3f338bf8b570dc3242164bcedfff97e8",
+      "line_count": 95
+    },
+    {
+      "path": "core/task_engine/runner.py",
+      "size_bytes": 966,
+      "sha256": "e4fb2b6f598d9cf7c5bc182441fa114ed1c5168fa39182cb3abe74a249a148bf",
+      "line_count": 22
+    },
+    {
+      "path": "core/telemetry/__init__.py",
+      "size_bytes": 410,
+      "sha256": "eb38f5a7bd46bdca72162d5a4983b6c453d6c8d0ad69f3762bcaa8dd7c9cdd6c",
+      "line_count": 15
+    },
+    {
+      "path": "core/telemetry/db.py",
+      "size_bytes": 6717,
+      "sha256": "af72957342cb8dc061d2e7ca2841b70f9e8013b5300c4fbfd44c2fb5e1990b4d",
+      "line_count": 180
+    },
+    {
+      "path": "core/telemetry/queries.py",
+      "size_bytes": 14253,
+      "sha256": "fb0f73d11cfac6b1f37d68ebf70286e43fea0ccedd3541c764730575f69b55b1",
+      "line_count": 412
+    },
+    {
+      "path": "core/telemetry/recorders.py",
+      "size_bytes": 6309,
+      "sha256": "0f1dc374d47ef9d46d8894fb28e579cb83fbc5eea58541247c67130abd95cca8",
+      "line_count": 201
+    },
+    {
+      "path": "core/telemetry/sanitize.py",
+      "size_bytes": 1256,
+      "sha256": "6d760acd4490c6224de401ea3b2af730b2b8935cac288c988a4954523bac7d2a",
+      "line_count": 41
+    },
+    {
+      "path": "core/utils/dxf_min.py",
+      "size_bytes": 1383,
+      "sha256": "f59de5fb173d0d88906289285947b25a9b6a8c4f8bc1b8faca7723f9fed9ad49",
+      "line_count": 43
+    },
+    {
+      "path": "core/ux/__init__.py",
+      "size_bytes": 1310,
+      "sha256": "32d0ca31fabe62dbe69f90ee39e58c0f5a69915659433641c26195e9f2da4064",
+      "line_count": 52
+    },
+    {
+      "path": "core/ux/mode_routing.py",
+      "size_bytes": 2906,
+      "sha256": "91056e0a25a29e92adb6f6fe31ea5e52a787f15da7a740a5758a8580e2732fb5",
+      "line_count": 95
+    },
+    {
+      "path": "core/ux/task_modes.py",
+      "size_bytes": 6580,
+      "sha256": "de84239f11f3361254c5e4ddeaa1187dddca3d1e33b478e21d51c86eac55449b",
+      "line_count": 205
+    },
+    {
+      "path": "core/ux/tools_catalog.py",
+      "size_bytes": 6281,
+      "sha256": "e92f269ee89b7440539f11394d086d2818a2ab42ae083391bbd4d60570bae619",
+      "line_count": 199
+    },
+    {
+      "path": "core/ux/tools_index.py",
+      "size_bytes": 1756,
+      "sha256": "d76e55abc85018e4b879fa2ca5523cae529a7d6d043d88c87a3ea444f5eef633",
+      "line_count": 51
+    },
+    {
+      "path": "core/ux/tools_registry.py",
+      "size_bytes": 6406,
+      "sha256": "b92b3b76fa717529f312e6a2da549c224c836f9c41a72f079869633a5adcf1fa",
+      "line_count": 208
+    },
+    {
+      "path": "core/ux/upload_policy.py",
+      "size_bytes": 5862,
+      "sha256": "a5923f03f67e584527aac3774cd44c19f4e5a57ca81e7383d70f19518d2e533f",
+      "line_count": 200
+    },
+    {
+      "path": "core/version.py",
+      "size_bytes": 62,
+      "sha256": "7567f58b94d83a76f7eb3266e7bdcea8ed74c4ec4edf9f0f9f0e67812206d6e8",
+      "line_count": 4
+    },
+    {
+      "path": "core/voice/__init__.py",
+      "size_bytes": 486,
+      "sha256": "53d673360d52f439770c1207cbce48840e93326c318bea54f2ef5e8614377ee0",
+      "line_count": 26
+    },
+    {
+      "path": "core/voice/audio_io.py",
+      "size_bytes": 6387,
+      "sha256": "7a2681c6d7453808011c6fc8108a33248a4e5c6635283505ffca4578d4bd736e",
+      "line_count": 196
+    },
+    {
+      "path": "core/voice/engine.py",
+      "size_bytes": 2604,
+      "sha256": "4ea1cb5ad8dc5bcafcd93845cd8a369e6e594df59d4e9d220d29e176e2022e98",
+      "line_count": 73
+    },
+    {
+      "path": "core/voice/providers/__init__.py",
+      "size_bytes": 335,
+      "sha256": "9f36e101d5b7d899abfab44ef10a4dcf43c60b9bf270847795829c845b88082f",
+      "line_count": 13
+    },
+    {
+      "path": "core/voice/providers/mock.py",
+      "size_bytes": 2107,
+      "sha256": "d9f723ffc69e170dbce644a6b965f1b6fc9b44f8766705c90b607aa4fd9d88c6",
+      "line_count": 65
+    },
+    {
+      "path": "core/voice/providers/stt_faster_whisper.py",
+      "size_bytes": 5266,
+      "sha256": "f284ea57ead6c137a2c1c7036a601d99923e73a18632f210334517356c6edb4d",
+      "line_count": 138
+    },
+    {
+      "path": "core/voice/providers/tts_piper.py",
+      "size_bytes": 6819,
+      "sha256": "a6a07307b817549c5353454d28a46567607191761ffb7299ca9283ad251b8a08",
+      "line_count": 175
+    },
+    {
+      "path": "core/voice/providers/tts_pyttsx3.py",
+      "size_bytes": 3115,
+      "sha256": "eee730b9dd3af0ac69e07311d9661cfd8add8b2f425a1303ab494c78059ce9a8",
+      "line_count": 88
+    },
+    {
+      "path": "core/voice/schemas.py",
+      "size_bytes": 3431,
+      "sha256": "9c9e1d40eade3c7e1e4fa759030b14991f1e9b2472bda75745ed1f41297958cd",
+      "line_count": 119
+    },
+    {
+      "path": "core/voice/vad.py",
+      "size_bytes": 2365,
+      "sha256": "7ef5f7adce8ebba87c584b71f946b4022a12a449c2a45c33c7b7cda63e864498",
+      "line_count": 83
+    },
+    {
+      "path": "core/voice/voice_loop.py",
+      "size_bytes": 12226,
+      "sha256": "36aa35f3f15408275a6e1fd5b95f3cf67f4d7045b41839ca7e82297649ecbcec",
+      "line_count": 338
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "size_bytes": 2595,
+      "sha256": "c362c60fa5f2416b85a94fcf315b34ffc6e8af97a672b5649ddee66ca635b625",
+      "line_count": 45
+    },
+    {
+      "path": "docs/DEV_GUIDE.md",
+      "size_bytes": 1340,
+      "sha256": "8012fac028b3a776042817f7c135ee9420b908e13a0e0529ed74281de3cd5f20",
+      "line_count": 36
+    },
+    {
+      "path": "docs/HUD_V2_OPERATIONS.md",
+      "size_bytes": 2416,
+      "sha256": "1bacdf59df6843dcde84a97022b316613331d7f31fc942f8557f5051988e1f2d",
+      "line_count": 51
+    },
+    {
+      "path": "docs/INSTALL.md",
+      "size_bytes": 1248,
+      "sha256": "e81c52d477e29ce17bdcc99c586aa2b5893c5d7331bb74e87dea87260947ddd9",
+      "line_count": 71
+    },
+    {
+      "path": "docs/NOVA_CURRENT_MAP.md",
+      "size_bytes": 2501,
+      "sha256": "4771d34b963048dcd5eb1bb3153eef562ca12e48499030d805d012bfca7ded21",
+      "line_count": 83
+    },
+    {
+      "path": "docs/NOVA_V1_MAP.md",
+      "size_bytes": 1484,
+      "sha256": "e145160cf652498b8aeeb70116613af8e347a975629f9c519dd77debc16ec141",
+      "line_count": 54
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "size_bytes": 348,
+      "sha256": "5001283de7da977b7c498ff360e652173d06dd6d25246bb378b0f31e2b95de2f",
+      "line_count": 22
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "size_bytes": 662,
+      "sha256": "cae78ffd2a44318bb12613b3f889838bcd0452a915b8abc445180d0be26b6d88",
+      "line_count": 19
+    },
+    {
+      "path": "docs/RUN_GUIDE.md",
+      "size_bytes": 1538,
+      "sha256": "b60c221823e866a25ea63e113b8b493413365a391fde1f7ff09ec8d96629f840",
+      "line_count": 70
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "size_bytes": 2519,
+      "sha256": "1be7e801b3b319417c1c5a8a776696ef6d94b4ae35ca61aba58a27c279d5bf3f",
+      "line_count": 82
+    },
+    {
+      "path": "docs/jarvis_unified_ux.md",
+      "size_bytes": 2008,
+      "sha256": "5e9a028b64f8e352b34ca354c599fa8b8b617cc5cda0cbe74bbfa846bdf3f5de",
+      "line_count": 73
+    },
+    {
+      "path": "docs/tools_and_modes.md",
+      "size_bytes": 1632,
+      "sha256": "957e2aa25f05431206f8df07a39428e73dc45a3244b2ef87c9309974cc75203a",
+      "line_count": 71
+    },
+    {
+      "path": "docs/voice_chat_local.md",
+      "size_bytes": 2477,
+      "sha256": "d7fa004e4258c0384011848026ae80b5228dd3a1bcd23bf054400348f87da6db",
+      "line_count": 114
+    },
+    {
+      "path": "integrations/cad_pipeline/novahub.plugin.json",
+      "size_bytes": 278,
+      "sha256": "280d1ba4cbe230c3be542cf48dc4e7e3b97e1bf860f25eb87ea9cef3b9577d32",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/cad_pipeline/plugin.py",
+      "size_bytes": 2149,
+      "sha256": "460c7025347245527db3db859fa19731254780e6e4c67fba295d122cffa10c0b",
+      "line_count": 65
+    },
+    {
+      "path": "integrations/conical_app/novahub.plugin.json",
+      "size_bytes": 560,
+      "sha256": "a49fcd46c66b59e9ded1c39780ea4f492bf0e7adba64f20eb489dcb7e2ebcd1e",
+      "line_count": 24
+    },
+    {
+      "path": "integrations/conical_app/plugin.py",
+      "size_bytes": 4178,
+      "sha256": "d966c94283a24f70a82ca45680f58e6fb411f2c9993a69c3b3f8cdde30623a8c",
+      "line_count": 113
+    },
+    {
+      "path": "integrations/conversation/novahub.plugin.json",
+      "size_bytes": 311,
+      "sha256": "5bdd5dbafc9607d809e47b274a8502e5a9ebd54e816235cd790e0ef9c58d753e",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/conversation/plugin.py",
+      "size_bytes": 2075,
+      "sha256": "870a63d5b463e8a02dff48651a572032700e3c25da7edc37f3dc9dbc4c434458",
+      "line_count": 58
+    },
+    {
+      "path": "integrations/core_examples/novahub.plugin.json",
+      "size_bytes": 351,
+      "sha256": "67c7400c5810758973fc2b0ea953c500be4103a1ce88d0bc5c2ff58a0faf0062",
+      "line_count": 20
+    },
+    {
+      "path": "integrations/core_examples/plugin.py",
+      "size_bytes": 950,
+      "sha256": "ba6ef5e209d1765d415730d8356c0d16492b96d041d020824b4b0eb8b18f1f3c",
+      "line_count": 23
+    },
+    {
+      "path": "integrations/deepseek/novahub.plugin.json",
+      "size_bytes": 526,
+      "sha256": "32d638ca91de3bfda525f7795d97d0f54f175a9bb0acd194fc7913acdf6311e1",
+      "line_count": 29
+    },
+    {
+      "path": "integrations/deepseek/plugin.py",
+      "size_bytes": 1783,
+      "sha256": "4e3f0429a8839291c4556fff9b340be1c38c85da7e824e7c66a2a3cde2b51aa9",
+      "line_count": 36
+    },
+    {
+      "path": "integrations/desktop/novahub.plugin.json",
+      "size_bytes": 285,
+      "sha256": "dbf5e4ca37eb141c1f21aafeadfd9a72aeae8c9e7d521bbff486407b13457e33",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/desktop/plugin.py",
+      "size_bytes": 5354,
+      "sha256": "1f189df0ae14a6f0a5cc8d13e0aaab9c1c1e9939645cdc02ce52c01908c76203",
+      "line_count": 152
+    },
+    {
+      "path": "integrations/fs_read_tools/novahub.plugin.json",
+      "size_bytes": 268,
+      "sha256": "b47700a86d29a01c16b859afafb15097c09752a400ab056e3d00e723b4351b2c",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/fs_read_tools/plugin.py",
+      "size_bytes": 15966,
+      "sha256": "e2eb88844351a4f303abb493d7128931d9b484f7c178b9f649b68e5b4dbad5fe",
+      "line_count": 416
+    },
+    {
+      "path": "integrations/gemini/novahub.plugin.json",
+      "size_bytes": 444,
+      "sha256": "82665b37964ebdbf9978ffc08f74b160599cd3df94a87f44a6dfba753a880949",
+      "line_count": 26
+    },
+    {
+      "path": "integrations/gemini/plugin.py",
+      "size_bytes": 1593,
+      "sha256": "8264f9df2907b38b2d8982a4e34c326de9ac6422fcdc2536fb01058169ccc3aa",
+      "line_count": 31
+    },
+    {
+      "path": "integrations/git/novahub.plugin.json",
+      "size_bytes": 420,
+      "sha256": "6f42a536e6e93448ce0252122b77cd3f2b44a266f38d1586e65f2b62f857a816",
+      "line_count": 25
+    },
+    {
+      "path": "integrations/git/plugin.py",
+      "size_bytes": 2338,
+      "sha256": "8f14057d93085d247986e83df8a8abc9f4f0eb80ef1db7d9d17ca967d86b5812",
+      "line_count": 46
+    },
+    {
+      "path": "integrations/halftone_app/novahub.plugin.json",
+      "size_bytes": 488,
+      "sha256": "c95c34c30641061989f3eabaccecb2390f858d26d2850efe9501425848e84908",
+      "line_count": 27
+    },
+    {
+      "path": "integrations/halftone_app/plugin.py",
+      "size_bytes": 1688,
+      "sha256": "abb9a07df2326a6894debd6adb363e7d8477e22140e8c1633c84b2499e04ba65",
+      "line_count": 42
+    },
+    {
+      "path": "integrations/nesting_app/novahub.plugin.json",
+      "size_bytes": 482,
+      "sha256": "6c6c541f66c81cdd47bc3c72bcba24b1c598e7cbae510168a1f397d3dacdf1ab",
+      "line_count": 27
+    },
+    {
+      "path": "integrations/nesting_app/plugin.py",
+      "size_bytes": 2080,
+      "sha256": "4d4f55ace89e54ed80a946ad0a38dcbe09e479a24ee2243cd5133cecd2531e2f",
+      "line_count": 52
+    },
+    {
+      "path": "integrations/ollama/novahub.plugin.json",
+      "size_bytes": 584,
+      "sha256": "393c2827aadd5977d4617bb4020c1d550ddcefd5f2fb7c36b846e79190df9696",
+      "line_count": 26
+    },
+    {
+      "path": "integrations/ollama/plugin.py",
+      "size_bytes": 3511,
+      "sha256": "72ad240fe5df045ea39621b0026c89fb0d7c09a9ba40d80b28fc309eb28557f7",
+      "line_count": 96
+    },
+    {
+      "path": "integrations/openai/novahub.plugin.json",
+      "size_bytes": 499,
+      "sha256": "a6bf681b0b476dc02a1763fd9ef5adf0dffe11d0b167c41397e1e4689f68f27a",
+      "line_count": 30
+    },
+    {
+      "path": "integrations/openai/plugin.py",
+      "size_bytes": 1946,
+      "sha256": "856e99bb037ce6fbb1a02f695c2b0d462d05cd7c8f315c444cabf012a1fcfd2b",
+      "line_count": 54
+    },
+    {
+      "path": "integrations/patch_apply/novahub.plugin.json",
+      "size_bytes": 385,
+      "sha256": "cf3db93af91c94cd246a77bcdaafc6afdca3cca5260644feb2d8249ace7b91e5",
+      "line_count": 17
+    },
+    {
+      "path": "integrations/patch_apply/plugin.py",
+      "size_bytes": 11144,
+      "sha256": "9632690042cfc4d9065b250e1cbe3f19ef1a5874d4f6c04041ceb55d9a5850da",
+      "line_count": 317
+    },
+    {
+      "path": "integrations/patch_planner/novahub.plugin.json",
+      "size_bytes": 454,
+      "sha256": "c1fbd464eaf4be6cee62dc17903ad8d9c271bb8392a8573a6665f5a44ea6c499",
+      "line_count": 24
+    },
+    {
+      "path": "integrations/patch_planner/plugin.py",
+      "size_bytes": 8753,
+      "sha256": "6eeb88db324369e4e373490024ff2caac5f2e021bb80e6afa4ac2e0add859931",
+      "line_count": 246
+    },
+    {
+      "path": "integrations/pipeline/novahub.plugin.json",
+      "size_bytes": 288,
+      "sha256": "de66886f38adbc304a8bdde7c1008438a270582bf88627444a0e93a0092aa843",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/pipeline/plugin.py",
+      "size_bytes": 7048,
+      "sha256": "2b14a7f4b1f6366d2816711d1b1b3ccbe108c524ea7bf66b890d6dd800086fc7",
+      "line_count": 191
+    },
+    {
+      "path": "integrations/project_scanner/novahub.plugin.json",
+      "size_bytes": 409,
+      "sha256": "affd86a2ba36d576e56912b9f8e14366d5cf81dead65cd998201575c3e564a8e",
+      "line_count": 17
+    },
+    {
+      "path": "integrations/project_scanner/plugin.py",
+      "size_bytes": 9642,
+      "sha256": "94161736ddc36a444f41f4f65eeecbaa90ee036f36c6e4916ce70da013b170bd",
+      "line_count": 310
+    },
+    {
+      "path": "integrations/run_preview/novahub.plugin.json",
+      "size_bytes": 211,
+      "sha256": "1d55a0940bcc4747e7fad600a8955db543b9d44f655bc3df3247c99d821f4516",
+      "line_count": 9
+    },
+    {
+      "path": "integrations/run_preview/plugin.py",
+      "size_bytes": 5444,
+      "sha256": "b00c0a7de9c650cbb0f00b433b38c5f59357af5e149981898d183ca844de8454",
+      "line_count": 154
+    },
+    {
+      "path": "integrations/security_doctor/novahub.plugin.json",
+      "size_bytes": 280,
+      "sha256": "c31e382e7ca3c5c18d917e2c1db40ed556181aa60ba646d437ced6ed5aef7fbc",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/security_doctor/plugin.py",
+      "size_bytes": 4835,
+      "sha256": "91109cebad1db5f976c8b802e47aa09d4df519b6e166f8eae55709dff15a6c82",
+      "line_count": 114
+    },
+    {
+      "path": "integrations/sketch/novahub.plugin.json",
+      "size_bytes": 271,
+      "sha256": "4a9303485813eab30dbfbcd7a2cc9ba10da08b92a25f9f315521eb8ab2129d24",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/sketch/plugin.py",
+      "size_bytes": 3250,
+      "sha256": "2b861b89e3695ca62930bd8a966ab5f4b55d98d414816094879886718dda7c6e",
+      "line_count": 94
+    },
+    {
+      "path": "integrations/stable_diffusion/novahub.plugin.json",
+      "size_bytes": 301,
+      "sha256": "183c506afdf710455e36cb888e94fac0b960fc29961ebfabebd4572a2c24f604",
+      "line_count": 13
+    },
+    {
+      "path": "integrations/stable_diffusion/plugin.py",
+      "size_bytes": 7636,
+      "sha256": "2c027a47216e5a81493bc145693e82c28bbb2d1a49128501576bdacb7d89021c",
+      "line_count": 200
+    },
+    {
+      "path": "integrations/telegram/novahub.plugin.json",
+      "size_bytes": 468,
+      "sha256": "d9c99c7c9cebc3a752f3a960d9cb8321a0973b8e779457fd6ee9591a32de806c",
+      "line_count": 26
+    },
+    {
+      "path": "integrations/telegram/plugin.py",
+      "size_bytes": 1531,
+      "sha256": "2d6b2adbd29741866a356c9b386ba6192cf8a3849986faf62117a69e5d70a1b3",
+      "line_count": 31
+    },
+    {
+      "path": "integrations/verify/novahub.plugin.json",
+      "size_bytes": 369,
+      "sha256": "bea45d7f7fff3b2432f85ff08b14e72de3a9b06891eb1c0dde1f4f99f6473536",
+      "line_count": 17
+    },
+    {
+      "path": "integrations/verify/plugin.py",
+      "size_bytes": 6321,
+      "sha256": "2b3d1a3cf43d9fd1e3181ec6fe966a7476d85b85095e9e3e50c55f4df602fd76",
+      "line_count": 175
+    },
+    {
+      "path": "integrations/voice/novahub.plugin.json",
+      "size_bytes": 273,
+      "sha256": "92c2db0c2e6bbcc9df9e40b2c7dd901e9668c3336015fb7062ed6bb36034ba46",
+      "line_count": 14
+    },
+    {
+      "path": "integrations/voice/plugin.py",
+      "size_bytes": 2090,
+      "sha256": "c4cc5c7469292eb44fc2add2adebb98c040f41dc8cfe815cf7ebe1fa1d242d51",
+      "line_count": 61
+    },
+    {
+      "path": "launchers/open_quick_links.bat",
+      "size_bytes": 118,
+      "sha256": "b83ce8b227210001bf305446bd40d4a3008f3d4e55122623a0da14f1f0bb1db4",
+      "line_count": 6
+    },
+    {
+      "path": "launchers/open_quick_links.ps1",
+      "size_bytes": 114,
+      "sha256": "f3e234b68aba1c1cb82af1d9d66817da34d46b500aca928f46ac807c0415a972",
+      "line_count": 4
+    },
+    {
+      "path": "launchers/start_novahub.bat",
+      "size_bytes": 155,
+      "sha256": "ee2286198801c14c5250936f4fd5cd16917e61a593feb75d4149b85fbb91307f",
+      "line_count": 10
+    },
+    {
+      "path": "launchers/start_novahub.ps1",
+      "size_bytes": 169,
+      "sha256": "712dd4e31d98f0b99fe50df0c285d7537ba5aaf08345a082ce0b863f4102e12c",
+      "line_count": 8
+    },
+    {
+      "path": "main.py",
+      "size_bytes": 20092,
+      "sha256": "f3d4951d5c66a1841daa71017c478e7181fcd946df1e1a218b0df1e21e7b992d",
+      "line_count": 551
+    },
+    {
+      "path": "run_chat.py",
+      "size_bytes": 242,
+      "sha256": "281bcce38f0b305fae660cbbca35152edbfc48b538c7f074f8056e81b3072697",
+      "line_count": 15
+    },
+    {
+      "path": "run_core_service.py",
+      "size_bytes": 242,
+      "sha256": "eb9e6008b2985847bbc8b1a257c0c169c871bf5c094191369354186303ad6e13",
+      "line_count": 15
+    },
+    {
+      "path": "run_hud_qml.py",
+      "size_bytes": 241,
+      "sha256": "cf2af3b841147f6c1e10f9ed2d46c1ec390965a66f7ada1bbedeff4dda00d38f",
+      "line_count": 15
+    },
+    {
+      "path": "run_ipc_cli.py",
+      "size_bytes": 242,
+      "sha256": "78ef29412bbd8115b44edab7aff94b8e0ac23131544dde6235ee306667744972",
+      "line_count": 15
+    },
+    {
+      "path": "run_quick_panel.py",
+      "size_bytes": 246,
+      "sha256": "de834be718dff6b56647148175e66ee0c16094cdc2b4c73341cf46c69c4899c5",
+      "line_count": 15
+    },
+    {
+      "path": "run_ui.py",
+      "size_bytes": 247,
+      "sha256": "d24752b902f80b26484dfffcd71cb3a0dcf8d616579b15466239e3415ba20c13",
+      "line_count": 15
+    },
+    {
+      "path": "run_whatsapp.py",
+      "size_bytes": 246,
+      "sha256": "de834be718dff6b56647148175e66ee0c16094cdc2b4c73341cf46c69c4899c5",
+      "line_count": 15
+    },
+    {
+      "path": "scripts/audit/run_full_audit.py",
+      "size_bytes": 27868,
+      "sha256": "b4d74229cc168bddc2547ceccf46a72a1be6c261c3c2de48c98c541ea6b8dc22",
+      "line_count": 815
+    },
+    {
+      "path": "scripts/build_release.py",
+      "size_bytes": 1394,
+      "sha256": "96174bbc7d64978ca0a31423d1179c7edadd52cf27fba3d374404b453d79c111",
+      "line_count": 64
+    },
+    {
+      "path": "scripts/engineering_qa.py",
+      "size_bytes": 4109,
+      "sha256": "28d1e09bfaa5c2f7cc40630322950c8be0b0d58eada90153a6fbe68332cf5415",
+      "line_count": 102
+    },
+    {
+      "path": "scripts/generate_tools_index.py",
+      "size_bytes": 791,
+      "sha256": "e3b2b8541b1dd37ff381c927d836d6f33379fc0c40f8edfda3698469cc654181",
+      "line_count": 27
+    },
+    {
+      "path": "scripts/geometry3d_qa.py",
+      "size_bytes": 3605,
+      "sha256": "fc62354d519435f81a73a7dfc17a0640de581461dd7afd1b631cfc87ecba37c8",
+      "line_count": 97
+    },
+    {
+      "path": "scripts/jarvis_core_qa.py",
+      "size_bytes": 9371,
+      "sha256": "5cc5f93b31aaa16e94bf5bbbdf33b5d495aad62d862bca559ef3bfa71937ca78",
+      "line_count": 235
+    },
+    {
+      "path": "scripts/seed_security_critical.py",
+      "size_bytes": 1474,
+      "sha256": "4a75cd9f4ea73b7a3fbafd198cfcf4eaabc18d5e9a9024b2a2d0aa2948165cbf",
+      "line_count": 42
+    },
+    {
+      "path": "scripts/sketch_qa.py",
+      "size_bytes": 3551,
+      "sha256": "e07f852049083ec981d5dc895d2baf33f91783364bc1195422a6d3b8acd772a4",
+      "line_count": 103
+    },
+    {
+      "path": "scripts/smoke_test.py",
+      "size_bytes": 1569,
+      "sha256": "d41e3b701e2643d43d96eb2b973977c26ed5a4837790100ecce864623492ca86",
+      "line_count": 56
+    },
+    {
+      "path": "scripts/timeline_qa.py",
+      "size_bytes": 3251,
+      "sha256": "fc44fd20696d6111348431424407c5093db86440186e068c4e99d4ceb31b66d6",
+      "line_count": 99
+    },
+    {
+      "path": "scripts/voice_qa.py",
+      "size_bytes": 3258,
+      "sha256": "9d0b4bc9d6f6b11066d496173fe3fefe07dbaa53f2a75f62ef285bc983beb55d",
+      "line_count": 96
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 1406,
+      "sha256": "e8325468b1697c362e104118d0013317fd731cd272a732ebb07ee2b7bfd29994",
+      "line_count": 46
+    },
+    {
+      "path": "tests/final_integration_test.py",
+      "size_bytes": 1225,
+      "sha256": "cd6a5f5298c2123dd8b85381145a4b700ded617490f576a265d7bc0df2eef9db",
+      "line_count": 34
+    },
+    {
+      "path": "tests/release/test_release_gate.py",
+      "size_bytes": 2311,
+      "sha256": "64ddf9952da6cad1f91c3322f45c58c106566a07c10a0bdd3a009e6ad6921c7b",
+      "line_count": 71
+    },
+    {
+      "path": "tests/test_audit_spine.py",
+      "size_bytes": 6045,
+      "sha256": "cf98c87e3a82e8755c95797b85a02ecf749573d7000de8fc8de43075e9dba781",
+      "line_count": 156
+    },
+    {
+      "path": "tests/test_cad_pipeline_tools.py",
+      "size_bytes": 2051,
+      "sha256": "4681ab4305c23eeb0abe90bbfa42e6f8960c5a774f26e5a596374a1c23095670",
+      "line_count": 60
+    },
+    {
+      "path": "tests/test_chat_whatsapp_unified_input_wiring.py",
+      "size_bytes": 1205,
+      "sha256": "89fe407fbb4bc6309a3fb67aba1fd5dd50110a47f8bee409dd7ad05e04044dec",
+      "line_count": 32
+    },
+    {
+      "path": "tests/test_conversation_arabic_strings.py",
+      "size_bytes": 1086,
+      "sha256": "143adcf3f9d6746e0619c590ac7357433a80ec0bc85beae18de774fcf8e6a482",
+      "line_count": 33
+    },
+    {
+      "path": "tests/test_docs_launch_smoke.py",
+      "size_bytes": 1064,
+      "sha256": "8db8b70e1dffce1cf1d33668f61985a2a46142db9438c0bbe5e92fd0e00acd1a",
+      "line_count": 42
+    },
+    {
+      "path": "tests/test_doctor_report.py",
+      "size_bytes": 2276,
+      "sha256": "0988937754d01133b4599cc152020545d31436b270e989f00d74ddba5a826650",
+      "line_count": 62
+    },
+    {
+      "path": "tests/test_dxf_reader_bulge_preserves_curvature.py",
+      "size_bytes": 1537,
+      "sha256": "8f4da4abbb4f46b0678c09a3f91a0c520f55da43623278ba698647ee78cd90f0",
+      "line_count": 54
+    },
+    {
+      "path": "tests/test_entrypoint_wrappers.py",
+      "size_bytes": 982,
+      "sha256": "67de43faf8d11ebc5129701f09f9b41eb6d30e78b2115220cc42d0a59272e997",
+      "line_count": 36
+    },
+    {
+      "path": "tests/test_gating.py",
+      "size_bytes": 4683,
+      "sha256": "0319a58fc4ab58df751a1a8e2626634cac4cbfc3e39383030d45582c56a60f23",
+      "line_count": 112
+    },
+    {
+      "path": "tests/test_hud_controller_candidate_models_bindable.py",
+      "size_bytes": 503,
+      "sha256": "6b0bc6077e4566dd7918bf33f47df661f25da3421cdef8dc6974a3d68ee87224",
+      "line_count": 14
+    },
+    {
+      "path": "tests/test_hud_controller_no_duplicate_defs.py",
+      "size_bytes": 1168,
+      "sha256": "0936d41b0edef9c916ae604991d8883e5c4e8b3a96b6b334f0ce5741cadc457a",
+      "line_count": 39
+    },
+    {
+      "path": "tests/test_hud_controller_voice_device_slot.py",
+      "size_bytes": 593,
+      "sha256": "8e5c1e945f0df4c5ee92a26737d35bd1592780d678e2a1ae9a23aed4a8a3924a",
+      "line_count": 22
+    },
+    {
+      "path": "tests/test_hud_qml_chat_sessions.py",
+      "size_bytes": 2667,
+      "sha256": "2d3e6a5f6e786d9ec0b6972cd11b74affdb180789182628a9590fb02278e0e75",
+      "line_count": 68
+    },
+    {
+      "path": "tests/test_hud_qml_commandbar_handlers.py",
+      "size_bytes": 782,
+      "sha256": "3e7fc6170deb9b98d7d6ef23cd98437dbb7353e238c6cc97f14b44b5b52d0de9",
+      "line_count": 21
+    },
+    {
+      "path": "tests/test_hud_qml_controller.py",
+      "size_bytes": 3308,
+      "sha256": "1fee289f7442e192be540ccc60e4e1dd3aea51dd5181e5804f94054b22feb9b1",
+      "line_count": 79
+    },
+    {
+      "path": "tests/test_hud_qml_general_chat.py",
+      "size_bytes": 6718,
+      "sha256": "bf59392908165d84da65d8e578f7de179e88f73d44a62c9a6bfd530e2d42ade2",
+      "line_count": 181
+    },
+    {
+      "path": "tests/test_hud_qml_geometry_adapter.py",
+      "size_bytes": 1487,
+      "sha256": "da92a5ec41002a5b50f07b5f0a9482bd9038e15d81092885118afe52549d35cf",
+      "line_count": 47
+    },
+    {
+      "path": "tests/test_hud_qml_jsonl_helpers.py",
+      "size_bytes": 922,
+      "sha256": "2ab6af296e3b45f9d7ebd6173d29b1f86f7b5f76da87473c3b8cd6c9e57e708a",
+      "line_count": 27
+    },
+    {
+      "path": "tests/test_hud_qml_models.py",
+      "size_bytes": 892,
+      "sha256": "772a7f127a956d8026bd9bdf19b626aa309f0d29a7f8bffaacb7388afcfc4dde",
+      "line_count": 32
+    },
+    {
+      "path": "tests/test_hud_qml_palette.py",
+      "size_bytes": 5785,
+      "sha256": "1b230e6e4dfe68665078aa1d136c97b7488b11af3fa55842d644591ab720cebb",
+      "line_count": 131
+    },
+    {
+      "path": "tests/test_hud_qml_popouts_wired.py",
+      "size_bytes": 1786,
+      "sha256": "b3dd67a62a6acaa27afb401c7309851aa81f29fdbabaf127893a5ad3e4857228",
+      "line_count": 41
+    },
+    {
+      "path": "tests/test_hud_qml_qa_panel_wired.py",
+      "size_bytes": 818,
+      "sha256": "db0ea380e2f7dc2c8c489aa10b6172594a81ef1d599a0e4895a3aaccc7c49b15",
+      "line_count": 24
+    },
+    {
+      "path": "tests/test_hud_qml_qa_report.py",
+      "size_bytes": 1956,
+      "sha256": "f9cfcd8559419b454a9a3c5605e592f4daa7deff810e34987a7a676c18ec5d04",
+      "line_count": 52
+    },
+    {
+      "path": "tests/test_hud_qml_smoke.py",
+      "size_bytes": 713,
+      "sha256": "09050e3b40ae00318e52d473fe5d840b84413b1e23d047a28df42d62d87f4395",
+      "line_count": 24
+    },
+    {
+      "path": "tests/test_hud_qml_ux_wiring.py",
+      "size_bytes": 1764,
+      "sha256": "cc560b4c8646616fd6dd8369aa5d82393388e2d34e0fc94a04ffce5a883f06d1",
+      "line_count": 45
+    },
+    {
+      "path": "tests/test_hud_qml_v2_command_palette_keys.py",
+      "size_bytes": 459,
+      "sha256": "e5457fb00639d53f072902dd073a022c1ff42c250d80597f4a2e4c5d0d78d84e",
+      "line_count": 14
+    },
+    {
+      "path": "tests/test_hud_qml_v2_drawer_parity.py",
+      "size_bytes": 1956,
+      "sha256": "ea02581e84e8a55babd18dca3144b4d3a4164d8da802ab24cbd53b4176a3add2",
+      "line_count": 51
+    },
+    {
+      "path": "tests/test_hud_qml_v2_offscreen_ironman.py",
+      "size_bytes": 666,
+      "sha256": "e9c710ad8d6e35e97762e952eef84b0cb4cf268926fb8612a2de75f3a358954a",
+      "line_count": 27
+    },
+    {
+      "path": "tests/test_hud_qml_v2_voice_controls.py",
+      "size_bytes": 1977,
+      "sha256": "9516ce620464280e657229e5a7f92d56c237c8d6b745d9c0ada3fe738f8b5580",
+      "line_count": 42
+    },
+    {
+      "path": "tests/test_hud_qml_voice.py",
+      "size_bytes": 3712,
+      "sha256": "c3167c6a36c06175cb4e8046652895f74b6bf4bc633a21a95b08d707476e4993",
+      "line_count": 121
+    },
+    {
+      "path": "tests/test_hud_qml_voice_panel_wired.py",
+      "size_bytes": 1329,
+      "sha256": "7e66d8c889d57ce8d7623224b03918e6d0aa88856cd602bd2770c50ccdcf694b",
+      "line_count": 34
+    },
+    {
+      "path": "tests/test_image_parser_ocr.py",
+      "size_bytes": 1807,
+      "sha256": "88e29c4da0fd3026e925d727b2119b1424bd1ddb0f136900492b413be2fb279e",
+      "line_count": 62
+    },
+    {
+      "path": "tests/test_ingest_manager_unified.py",
+      "size_bytes": 2705,
+      "sha256": "540977116852da010799d9a498bf8855baba97cc0b08306f0beffd600e6ff0ba",
+      "line_count": 68
+    },
+    {
+      "path": "tests/test_ipc_autospawn.py",
+      "size_bytes": 2328,
+      "sha256": "c84ece344148f0ff3f77cb4aaad04371552c536c124cec8315bcdd474f2c6879",
+      "line_count": 78
+    },
+    {
+      "path": "tests/test_ipc_chat_emits_events.py",
+      "size_bytes": 3722,
+      "sha256": "7f8e663962b2210e0d2670b52f1382335ccf3319a8d664d22f95e3e68c6c3030",
+      "line_count": 101
+    },
+    {
+      "path": "tests/test_ipc_chat_send_routing_debug.py",
+      "size_bytes": 1961,
+      "sha256": "9f4da813144e770237798e823a3f90103b99869938079597117ceafbbbe1d05f",
+      "line_count": 59
+    },
+    {
+      "path": "tests/test_ipc_chat_send_smoke.py",
+      "size_bytes": 2001,
+      "sha256": "e5bcfd27a72361be25e5ead63a2a53344636982d966293f0eb7719ae4814fa26",
+      "line_count": 60
+    },
+    {
+      "path": "tests/test_ipc_events_channel_basic.py",
+      "size_bytes": 1681,
+      "sha256": "0f4304a69a70c2d77947282c7d18fbc6fc36b227c5d3f2cf6227d3e08cbf718a",
+      "line_count": 53
+    },
+    {
+      "path": "tests/test_ipc_reconnect_respawn.py",
+      "size_bytes": 3272,
+      "sha256": "936f5d403ddba142668793bb97ebecb6f02b323db8f00034443eac2db309c3cb",
+      "line_count": 108
+    },
+    {
+      "path": "tests/test_ipc_server_health.py",
+      "size_bytes": 1463,
+      "sha256": "212df14bb65deea11f0b1c7ba6027ff8b4404c7e3275bd3047a0188cf0435795",
+      "line_count": 43
+    },
+    {
+      "path": "tests/test_ipc_spawn_command_path.py",
+      "size_bytes": 1646,
+      "sha256": "d8b03893b5f1f9f7b1005253906c2d748e8a842f46e1b157af6264fe5bee3ab4",
+      "line_count": 57
+    },
+    {
+      "path": "tests/test_jobs_controller.py",
+      "size_bytes": 2180,
+      "sha256": "41309a517554c4f744af025b8ae7b0b9b8c771869f13dd497d9316cfbf3abab1",
+      "line_count": 61
+    },
+    {
+      "path": "tests/test_launchers_compat_smoke.py",
+      "size_bytes": 1202,
+      "sha256": "3fd3b3b08d87e9734001a274fb783a396f186b537bfd7f66abcbc3fe2cea94b1",
+      "line_count": 46
+    },
+    {
+      "path": "tests/test_llm_budget_guard.py",
+      "size_bytes": 2656,
+      "sha256": "68c47700735a46883dcca660d6e8fd00e913ae056a90fa6c1b2aa94ece62c3e5",
+      "line_count": 79
+    },
+    {
+      "path": "tests/test_llm_router_provider_calls.py",
+      "size_bytes": 10278,
+      "sha256": "ce82458b94ad7893180f942e517df94324f2eaa03fce0fe79d38431fa8e2e1b9",
+      "line_count": 301
+    },
+    {
+      "path": "tests/test_llm_routing_config.py",
+      "size_bytes": 2890,
+      "sha256": "dbc463a3a7c6dcd8d1b211884f2d275ffecfe8cbe1224f8c6f6970a8ddb54240",
+      "line_count": 79
+    },
+    {
+      "path": "tests/test_main_dispatch.py",
+      "size_bytes": 2179,
+      "sha256": "8c7d8aed04eff04f9567e7fbbfafdd6011ac98060858408f80b4d44b0bc9591f",
+      "line_count": 66
+    },
+    {
+      "path": "tests/test_main_event_publisher_contract.py",
+      "size_bytes": 474,
+      "sha256": "ca2c4a85b980e01c8ec6822b95412a1d030dfa350e330c72a8d4bc5e3dd153f3",
+      "line_count": 13
+    },
+    {
+      "path": "tests/test_main_hud_ui_selector.py",
+      "size_bytes": 1645,
+      "sha256": "1dfc600d9ceb9618007b2e4dbdac2b84a270e0d4eab537fcd761bc8d1e6ec16f",
+      "line_count": 55
+    },
+    {
+      "path": "tests/test_main_pylance_contracts.py",
+      "size_bytes": 851,
+      "sha256": "67d57182b70d627c88d7dbc64811e0ebac42100495bbefbcfcfec1f0c8dbb477",
+      "line_count": 31
+    },
+    {
+      "path": "tests/test_main_whatsapp_launch_path.py",
+      "size_bytes": 451,
+      "sha256": "abb601aea4f2ac72360ba501197918d518fcde955940a61dab0ef3bd16fe6b3c",
+      "line_count": 13
+    },
+    {
+      "path": "tests/test_no_naive_utcnow.py",
+      "size_bytes": 946,
+      "sha256": "da41d019e7a7b518244ddc4d96ab2daf1edde6e03c18fe142e962810c10e0268",
+      "line_count": 33
+    },
+    {
+      "path": "tests/test_non_ipc_path_smoke.py",
+      "size_bytes": 1467,
+      "sha256": "c60e057f4fb4c5fb984ea95c5b0b290744af70907f05da03f1ffff92655e97d0",
+      "line_count": 44
+    },
+    {
+      "path": "tests/test_ollama_policy.py",
+      "size_bytes": 1653,
+      "sha256": "f823ad046e92d4500264c390d9ef9742d373daa031f7de2d53fb6be6c78498ae",
+      "line_count": 45
+    },
+    {
+      "path": "tests/test_online_policy_multilingual.py",
+      "size_bytes": 685,
+      "sha256": "fb98b945f9b6de15667c47d3e1ad82a34273406b28c2d7c809c4b6b5f0afa8ce",
+      "line_count": 22
+    },
+    {
+      "path": "tests/test_panel_card_mouse_handler.py",
+      "size_bytes": 384,
+      "sha256": "1febfee697ca3dcafd0a0274efa7afec15d79ad491360c94df28c1e73c0a6e91",
+      "line_count": 12
+    },
+    {
+      "path": "tests/test_patch_pipeline_integrity.py",
+      "size_bytes": 2193,
+      "sha256": "f67d5ef6bc94ccdd94603c559ca1e1c288709b7df8dfd50ebd4e03d9f07f8c91",
+      "line_count": 55
+    },
+    {
+      "path": "tests/test_pattern_projector_closed_inside_safe_zone_unchanged.py",
+      "size_bytes": 1534,
+      "sha256": "872779e595be4b01f1c39c690b0ef37411acb68354f3edc20149f7b0845e2d71",
+      "line_count": 49
+    },
+    {
+      "path": "tests/test_pattern_projector_closed_loop_stays_closed_after_clip.py",
+      "size_bytes": 1676,
+      "sha256": "adee845d1ebff64c2ce3eceec4879fe9b6fcee7facb00f90bee42ee25c5616f9",
+      "line_count": 56
+    },
+    {
+      "path": "tests/test_plugin_loader_tools.py",
+      "size_bytes": 597,
+      "sha256": "30168f701c7b8550f900fd5068246c1c3ac823d5837b9a137a4694cac146d502",
+      "line_count": 19
+    },
+    {
+      "path": "tests/test_project_manager_security.py",
+      "size_bytes": 1344,
+      "sha256": "be29a768785df952168ec4342e4844be007bfc3f279cfdacf7dc6cc94c0b56cc",
+      "line_count": 38
+    },
+    {
+      "path": "tests/test_selector_weighted_deterministic.py",
+      "size_bytes": 3190,
+      "sha256": "ce7f8e9035615e545ff1cfd799f0807710b32a78a21b8ff4a2d9e9ab7cbdc82c",
+      "line_count": 118
+    },
+    {
+      "path": "tests/test_session_history_get.py",
+      "size_bytes": 2634,
+      "sha256": "b477c4957b450bb6953e82f86737071ab1a98afbdb3a5139d327097602aee463",
+      "line_count": 75
+    },
+    {
+      "path": "tests/test_system_state_machine.py",
+      "size_bytes": 531,
+      "sha256": "dc8b1d68a5accbe6f1ab653c0bfcd0d1a4b95c562dddc4bae32fd09c17fb3ceb",
+      "line_count": 18
+    },
+    {
+      "path": "tests/test_telemetry_db_migrations.py",
+      "size_bytes": 794,
+      "sha256": "e5b8c68c791977800b9c238d9b1fda9fb026299600596d3304cda42bb3ef3379",
+      "line_count": 22
+    },
+    {
+      "path": "tests/test_telemetry_record_and_query.py",
+      "size_bytes": 2585,
+      "sha256": "9abfdbbbf11010b63dc2285423fd58528d6df11053fd0f0a726e6b8301e7fca2",
+      "line_count": 84
+    },
+    {
+      "path": "tests/test_tools_index_report.py",
+      "size_bytes": 1564,
+      "sha256": "fe12f944dc6e40bc3ec1df96e43a84cef831e77edb9370f8cbc32a4b3b2f311a",
+      "line_count": 52
+    },
+    {
+      "path": "tests/test_ux_mode_routing.py",
+      "size_bytes": 1245,
+      "sha256": "fb480a7af2adc1220ad801e037e0e2272ee655904d58052f3cd741c1b36047fe",
+      "line_count": 32
+    },
+    {
+      "path": "tests/test_ux_task_modes.py",
+      "size_bytes": 1632,
+      "sha256": "e184f217babb2fb7f8ed1f10dd4753818fe18681fd9f3706e15d4ff831ba8154",
+      "line_count": 39
+    },
+    {
+      "path": "tests/test_ux_tools_catalog.py",
+      "size_bytes": 3644,
+      "sha256": "54b1148846f82ffc7901af427a503dab3c5265e90f537789f76269927b8feddc",
+      "line_count": 97
+    },
+    {
+      "path": "tests/test_ux_tools_registry.py",
+      "size_bytes": 747,
+      "sha256": "0c19e33408efa8d5b51698a39bc3f6d2e6da027c578849766c2cc494efc03620",
+      "line_count": 21
+    },
+    {
+      "path": "tests/test_ux_upload_policy.py",
+      "size_bytes": 1875,
+      "sha256": "32cb0a4b2b7dc2395497063bb3acede746ec66a5dde6e5dc8de6d43afb6057ba",
+      "line_count": 60
+    },
+    {
+      "path": "tests/test_voice_loop.py",
+      "size_bytes": 2880,
+      "sha256": "50ccfe35c1f33aa0b1d503cced5f1161b3f978c90427d4928c890c60e853b844",
+      "line_count": 81
+    },
+    {
+      "path": "tests/test_voice_manager_config_update.py",
+      "size_bytes": 778,
+      "sha256": "170f4ac35f5cbbab32354e736d1b1a33abfaadeffa6ee0301f4f38028bb0c7f4",
+      "line_count": 24
+    },
+    {
+      "path": "ui/chat/app.py",
+      "size_bytes": 62326,
+      "sha256": "0c41374c26cc1c83215ff4355dda3cf4ec21c0a860b60306e795cee7809afee1",
+      "line_count": 1405
+    },
+    {
+      "path": "ui/chat/widgets.py",
+      "size_bytes": 1493,
+      "sha256": "f1f97c8b61dccab53ed9697c62e6a976fedb7ec9e1e2e0913dc74692ee5cac01",
+      "line_count": 41
+    },
+    {
+      "path": "ui/common_ui/Theme.qml",
+      "size_bytes": 790,
+      "sha256": "11430fcd5b4c9e679a2bf73d133b9b418d8976ad9e826cccf1145cf6b41ce933",
+      "line_count": 32
+    },
+    {
+      "path": "ui/dashboard/app.py",
+      "size_bytes": 12167,
+      "sha256": "c3f948c630bb3b0b0730bc9f9b105bc529f1464f6bdd14bdc0ae366084fd8c6f",
+      "line_count": 314
+    },
+    {
+      "path": "ui/dashboard/widgets.py",
+      "size_bytes": 7327,
+      "sha256": "2362270782639bbe15dcb2c2f582e17c10d7bb6a1e90e318ccebf3c53457d42a",
+      "line_count": 204
+    },
+    {
+      "path": "ui/hud_qml/__init__.py",
+      "size_bytes": 76,
+      "sha256": "fb7ee5c199659c75f01534a9a1a2ed3e8907f9a994ca25f8da434c3a13a1d509",
+      "line_count": 4
+    },
+    {
+      "path": "ui/hud_qml/app_qml.py",
+      "size_bytes": 5119,
+      "sha256": "dc2f9b409a04ca0f70ddff16e0ae905100d7238dd1b0968ff46e31b156140b90",
+      "line_count": 149
+    },
+    {
+      "path": "ui/hud_qml/controller.py",
+      "size_bytes": 141173,
+      "sha256": "b1583276d8cdc67238826cde602778fe6605bf7b685f4003c9689276fc6cea2c",
+      "line_count": 3362
+    },
+    {
+      "path": "ui/hud_qml/geometry_adapter.py",
+      "size_bytes": 3089,
+      "sha256": "54fcd0ab5a25e6ec53bd3f79a8d3388aa95556b61aa05470afe4784f4989032b",
+      "line_count": 92
+    },
+    {
+      "path": "ui/hud_qml/managers/candidate_manager.py",
+      "size_bytes": 3152,
+      "sha256": "80f19691bcf64c1444c4c94b56a90e7b1b5734bfcd731c885b6f051f58e9833a",
+      "line_count": 80
+    },
+    {
+      "path": "ui/hud_qml/managers/chat_manager.py",
+      "size_bytes": 11939,
+      "sha256": "ec2e53ef4eb53e42e1d1a3adad5ba18f483985e3aa8e82207281a31e5e7e32d5",
+      "line_count": 313
+    },
+    {
+      "path": "ui/hud_qml/managers/network_manager.py",
+      "size_bytes": 5252,
+      "sha256": "6e886726f23bbc963623a1419b81ad139f4d708fee5a067a0438d3ca2494ef93",
+      "line_count": 136
+    },
+    {
+      "path": "ui/hud_qml/managers/voice_manager.py",
+      "size_bytes": 6455,
+      "sha256": "a2b71f1b88892d61d2b1b299b264d0f7d226c57737e73091718a11bd14818896",
+      "line_count": 196
+    },
+    {
+      "path": "ui/hud_qml/models.py",
+      "size_bytes": 2697,
+      "sha256": "e17a1ff824f78ed718de5d340331b2435c6281639dc3fea8690e4ff9d0377fd7",
+      "line_count": 85
+    },
+    {
+      "path": "ui/hud_qml/qml/Main.qml",
+      "size_bytes": 29914,
+      "sha256": "5ce2d724428dee1ee8834afef1b9d43d83a0e73664ccc41b02247a4003b9ac84",
+      "line_count": 803
+    },
+    {
+      "path": "ui/hud_qml/qml/components/AnimatedDots.qml",
+      "size_bytes": 1369,
+      "sha256": "3286c290a73bf61dc24accedd1791c93a5b928f3951defd76b968d7a391d6b4f",
+      "line_count": 45
+    },
+    {
+      "path": "ui/hud_qml/qml/components/ChatList.qml",
+      "size_bytes": 3681,
+      "sha256": "9cdbe844b0431bdb9ad3abe389531e802fba647e427d0709b2b2a44c26073871",
+      "line_count": 116
+    },
+    {
+      "path": "ui/hud_qml/qml/components/ChatView.qml",
+      "size_bytes": 4217,
+      "sha256": "7cea378b96b9e060b7082838a0a1009308a2ada06130557abaaf787ffc9e4a30",
+      "line_count": 133
+    },
+    {
+      "path": "ui/hud_qml/qml/components/CommandBar.qml",
+      "size_bytes": 6438,
+      "sha256": "18fb9e7b76fae9448a3081bab85e6e7df58e727599d83dbb8c6276d423e9c8c6",
+      "line_count": 209
+    },
+    {
+      "path": "ui/hud_qml/qml/components/CommandPalette.qml",
+      "size_bytes": 12328,
+      "sha256": "d31c3c3b9e9e905db4cc3974a86c04f86b58f0d6e5db24b0076406fa21f132f8",
+      "line_count": 330
+    },
+    {
+      "path": "ui/hud_qml/qml/components/ConfirmationStrip.qml",
+      "size_bytes": 2008,
+      "sha256": "1ef38db2afc7a8f7fdab147301103f84fdd45b9b1636d3168311de5b159a395b",
+      "line_count": 79
+    },
+    {
+      "path": "ui/hud_qml/qml/components/JobsList.qml",
+      "size_bytes": 3874,
+      "sha256": "6021652e2933decff1624764e02790cc99d9e81def7d4d4dd4435295724b5b2b",
+      "line_count": 118
+    },
+    {
+      "path": "ui/hud_qml/qml/components/PanelCard.qml",
+      "size_bytes": 5021,
+      "sha256": "9fc1074ed0661b96556cfd919c4528e512d3dfc73918e3cb616c6bfa163b7a10",
+      "line_count": 163
+    },
+    {
+      "path": "ui/hud_qml/qml/components/PopoutWindow.qml",
+      "size_bytes": 813,
+      "sha256": "0418d8915a4df4c7abbaa4ff525a5f1eb7169407e47b486a3e3d559b5cbf81f6",
+      "line_count": 39
+    },
+    {
+      "path": "ui/hud_qml/qml/components/ProjectList.qml",
+      "size_bytes": 3815,
+      "sha256": "26955b211ec4afb702645fdb695b40a3a90fc1083b74825909ba4590b8d14bbf",
+      "line_count": 120
+    },
+    {
+      "path": "ui/hud_qml/qml/components/Theme.qml",
+      "size_bytes": 1322,
+      "sha256": "0e2e5b212d83e3606de0eb40e37b12022f3199f4358f04158258f5e8a09b888b",
+      "line_count": 39
+    },
+    {
+      "path": "ui/hud_qml/qml/components/ThreeDViewport.qml",
+      "size_bytes": 7164,
+      "sha256": "3a02f229b822b2f6b72ca698a63d26ccd7772f7a45bba6b696b75baf7aa062e2",
+      "line_count": 218
+    },
+    {
+      "path": "ui/hud_qml/qml/components/TopBar.qml",
+      "size_bytes": 4029,
+      "sha256": "dc29f9875c25ee991de1dcfb2a4b87bb4ff72c958f32f93616ba498c82186018",
+      "line_count": 133
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/AttachSummaryPanel.qml",
+      "size_bytes": 5088,
+      "sha256": "a3e22b419d9eed478179cc4add2fea962d485dafdefbd44761e9cfd860bb1fd6",
+      "line_count": 155
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/DiffPreviewPanel.qml",
+      "size_bytes": 3860,
+      "sha256": "2abc209f943114024bf33d1f5c2848dc45f0186c49f4b4fec177a1bcc79f29bf",
+      "line_count": 123
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/HealthStatsPanel.qml",
+      "size_bytes": 4850,
+      "sha256": "dbba67712d29a8ff16218590ca2580e507cdb7bddab946b3990e562e56255d5d",
+      "line_count": 149
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/QAReportPanel.qml",
+      "size_bytes": 9597,
+      "sha256": "27d7383bc16ce20ff0221fc3dbb5c642b2773494341ea9f6c91291ad2efec70d",
+      "line_count": 275
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/ThreeDPanel.qml",
+      "size_bytes": 1568,
+      "sha256": "e4f0e1e5faac79b1a8b8784649d9018e8bc01ab85c0245e4d86829d2af552c8b",
+      "line_count": 61
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/TimelinePanel.qml",
+      "size_bytes": 3114,
+      "sha256": "169791bc3453014f1eb9b8eafa2cc168d6a52c748d5e7f7f0c83177b4e0d86b9",
+      "line_count": 103
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/ToolsMenuPanel.qml",
+      "size_bytes": 4241,
+      "sha256": "2c7d3906833e1f6830dab8fbeea6c6b70d8f543325519ce27c51d2546e3bbe0e",
+      "line_count": 132
+    },
+    {
+      "path": "ui/hud_qml/qml/panels/VoiceChatPanel.qml",
+      "size_bytes": 8543,
+      "sha256": "875e7e1cf49b4a8fd8d8a44f9857a20abfce9230d8cce701948abeee399032c2",
+      "line_count": 279
+    },
+    {
+      "path": "ui/hud_qml_v2/MainV2.qml",
+      "size_bytes": 39682,
+      "sha256": "fd67d2c351ad8e7ce58909d5efe0a8d0984a67d3dce613d73eee15320fab9dee",
+      "line_count": 1093
+    },
+    {
+      "path": "ui/hud_qml_v2/components/ChatPane.qml",
+      "size_bytes": 5729,
+      "sha256": "6b24c564b3e63cbe1be765f6809bab3a2e43d750196496d3f049848002149a7a",
+      "line_count": 186
+    },
+    {
+      "path": "ui/hud_qml_v2/components/CommandPalette.qml",
+      "size_bytes": 9306,
+      "sha256": "16396d99bfdf450e2d8b7c983e832c85f9df6fe36329b3d20195565c3d3c0408",
+      "line_count": 247
+    },
+    {
+      "path": "ui/hud_qml_v2/components/Composer.qml",
+      "size_bytes": 8735,
+      "sha256": "49a31b03a966ba6f1cb02cc5df6b37f1fb492ed701c34d3aa2d56af291e4737d",
+      "line_count": 266
+    },
+    {
+      "path": "ui/hud_qml_v2/components/ExecutionChips.qml",
+      "size_bytes": 3657,
+      "sha256": "cc5613cd4df9094eb994bf5a69799619311c6c782556735f648b56a90150dd91",
+      "line_count": 118
+    },
+    {
+      "path": "ui/hud_qml_v2/components/MessageBubble.qml",
+      "size_bytes": 2543,
+      "sha256": "fcd82c25149da913f9c669a675fb57ad9001f1f582749ba4b9a56f5656fbd6b6",
+      "line_count": 92
+    },
+    {
+      "path": "ui/hud_qml_v2/components/StatusPill.qml",
+      "size_bytes": 2351,
+      "sha256": "7aa63519148cc0fe4de7e9ccdac0065234c5b4c94a9dbfd0c0ffe39f8332abfd",
+      "line_count": 91
+    },
+    {
+      "path": "ui/hud_qml_v2/components/Toast.qml",
+      "size_bytes": 1290,
+      "sha256": "4df1416708f206e2bec9326150d8c580c1da3cfbb3d3d44ec780a94d2023fe97",
+      "line_count": 60
+    },
+    {
+      "path": "ui/quick_panel/__init__.py",
+      "size_bytes": 80,
+      "sha256": "6a20a57ebd1c54dc545b749084eff4a7358af19e94a4ce1787843db3e5f3cac5",
+      "line_count": 4
+    },
+    {
+      "path": "ui/quick_panel/app.py",
+      "size_bytes": 161052,
+      "sha256": "573f6bcebc597577e63781ddf7e54944f774acef225dc30f1aba58e019b044c9",
+      "line_count": 3421
+    },
+    {
+      "path": "ui/quick_panel/widgets.py",
+      "size_bytes": 1211,
+      "sha256": "0238a4ac23bd6640710b7941087514877f31cd5371d91d2b30fbc812330d8d30",
+      "line_count": 33
+    },
+    {
+      "path": "ui/quick_panel_v2/MainV2.qml",
+      "size_bytes": 2609,
+      "sha256": "2c24d5a0262804d30b64bdf3759d36d202cb270e7572c35753e1d9d9a1a6fe8a",
+      "line_count": 103
+    },
+    {
+      "path": "ui/whatsapp/app.py",
+      "size_bytes": 196,
+      "sha256": "98eea4246593239f40d372b31bc49f7d7261cea79f61a8eca18ad68b20c72165",
+      "line_count": 8
+    },
+    {
+      "path": "ui/whatsapp/widgets.py",
+      "size_bytes": 152,
+      "sha256": "9ba7f7427d60ec752088c1949d57419ae4a464ed53b026d9a16d86ac5278ea34",
+      "line_count": 6
+    }
+  ]
+}

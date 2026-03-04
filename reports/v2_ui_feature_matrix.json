@@ -1,0 +1,143 @@
+{
+  "generated_at_utc": "2026-02-22T00:00:00Z",
+  "scope": [
+    "HUD v2",
+    "QuickPanel v2"
+  ],
+  "method": "Program Capability Baseline vs V2 UI Surface + Binding + Runtime/Test Evidence",
+  "capabilities": [
+    {
+      "id": "top_controls_close_minimize",
+      "group": "UI Core",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:1068",
+        "nova_hub/tests/test_hud_qml_v2_command_palette_keys.py:14",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:20"
+      ]
+    },
+    {
+      "id": "chat_core_send_receive",
+      "group": "Chat/Conversation",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:1142",
+        "nova_hub/core/ipc/service.py:307",
+        "nova_hub/tests/test_hud_qml_v2_offscreen_ironman.py:1"
+      ]
+    },
+    {
+      "id": "tools_governance_approvals",
+      "group": "Tools + Approvals",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:162",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:203",
+        "nova_hub/core/ux/tools_catalog.py:50",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:41"
+      ]
+    },
+    {
+      "id": "attach_ingest",
+      "group": "Attach/Ingest",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:226",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:233",
+        "nova_hub/tests/test_attach_summary_semantics.py:6",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:50"
+      ]
+    },
+    {
+      "id": "health_doctor_provider_stats",
+      "group": "Health/Doctor",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:285",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:286",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:332",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:56"
+      ]
+    },
+    {
+      "id": "ollama_local_first_surface",
+      "group": "LLM Local-First",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:291",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:300",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:308",
+        "nova_hub/core/ipc/service.py:281",
+        "nova_hub/core/ipc/service.py:283",
+        "nova_hub/tests/test_ollama_health.py:1",
+        "nova_hub/tests/test_ollama_models_list.py:1"
+      ]
+    },
+    {
+      "id": "memory_search_parity",
+      "group": "Memory",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:414",
+        "nova_hub/ui/hud_qml_v2/MainV2.qml:1152",
+        "nova_hub/tests/test_quick_panel_v2_runtime_search.py:6",
+        "nova_hub/tests/test_cross_ui_memory_search_semantics.py:6",
+        "nova_hub/tests/test_ipc_memory_search.py:10"
+      ]
+    },
+    {
+      "id": "voice_runtime_readiness_and_devices",
+      "group": "Voice",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:499",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:558",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:569",
+        "nova_hub/core/ipc/service.py:321",
+        "nova_hub/tests/test_hud_qml_v2_voice_controls.py:1",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:76"
+      ]
+    },
+    {
+      "id": "timeline_history_surface",
+      "group": "Timeline/History",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:390",
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:397",
+        "nova_hub/ui/hud_qml/controller.py:3172",
+        "nova_hub/tests/test_quick_panel_v2_runtime_controls.py:66"
+      ]
+    },
+    {
+      "id": "command_palette_action_parity",
+      "group": "Command Palette",
+      "status": "full",
+      "closure_percent": 100,
+      "evidence": [
+        "nova_hub/ui/quick_panel_v2/MainV2.qml:116",
+        "nova_hub/ui/hud_qml_v2/components/CommandPalette.qml:13",
+        "nova_hub/tests/test_quick_panel_v2_runtime_search.py:6"
+      ]
+    }
+  ],
+  "verification": {
+    "pytest_v2_and_integration_subset": "24 passed in 2.66s",
+    "doctor_report_call": "pass",
+    "memory_search_call": "pass",
+    "ollama_health_ping_call": "pass"
+  },
+  "overall": {
+    "operational_closure_percent": 100.0,
+    "summary": "V2 parity closure completed for HUD v2 and QuickPanel v2 against the audited capability set."
+  }
+}

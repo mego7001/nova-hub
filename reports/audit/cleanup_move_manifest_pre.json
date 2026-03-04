@@ -1,0 +1,52 @@
+﻿{
+    "generated_at":  "2026-02-22T01:47:15Z",
+    "root":  "d:\\nouva hub\\nova_hub_v1_release\\nova_hub",
+    "action":  "pre_move_snapshot",
+    "items":  [
+                  {
+                      "path":  ".venv",
+                      "exists":  true,
+                      "file_count":  4837
+                  },
+                  {
+                      "path":  "workspace",
+                      "exists":  true,
+                      "file_count":  343
+                  },
+                  {
+                      "path":  "tmp_pytest",
+                      "exists":  true,
+                      "file_count":  401
+                  },
+                  {
+                      "path":  "tmp_pytest_work",
+                      "exists":  true,
+                      "file_count":  1046
+                  },
+                  {
+                      "path":  "tmp_runtime_env",
+                      "exists":  true,
+                      "file_count":  189
+                  },
+                  {
+                      "path":  "tmp_pycache",
+                      "exists":  true,
+                      "file_count":  38
+                  },
+                  {
+                      "path":  "tmp_compile_artifacts",
+                      "exists":  true,
+                      "file_count":  9
+                  },
+                  {
+                      "path":  ".pytest_cache",
+                      "exists":  true,
+                      "file_count":  5
+                  },
+                  {
+                      "path":  "__pycache__",
+                      "exists":  true,
+                      "file_count":  10
+                  }
+              ]
+}

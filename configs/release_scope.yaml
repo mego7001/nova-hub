@@ -1,0 +1,31 @@
+include_paths:
+  - "main.py"
+  - "core"
+  - "ui"
+  - "integrations"
+  - "configs"
+  - "launchers"
+  - "scripts"
+  - "tests"
+  - "docs"
+  - "run_*.py"
+
+exclude_globs:
+  - ".venv/**"
+  - "workspace/**"
+  - "tmp*/**"
+  - "__pycache__/**"
+  - ".pytest_cache/**"
+  - ".pytest_tmp/**"
+  - "releases/**"
+  - "reports/**"
+  - "outputs/**"
+  - "logs/**"
+
+critical_test_commands:
+  - "pytest --collect-only -q"
+  - "pytest -q tests/test_no_naive_utcnow.py"
+  - "pytest -q tests/test_entrypoint_wrappers.py tests/test_main_dispatch.py tests/test_docs_launch_smoke.py tests/test_launchers_compat_smoke.py"
+  - "pytest -q tests/test_ipc_server_health.py tests/test_ipc_chat_send_smoke.py tests/test_ipc_autospawn.py tests/test_ipc_reconnect_respawn.py"
+  - "pytest -q tests/test_gating.py tests/test_project_manager_security.py tests/test_online_policy_multilingual.py tests/test_doctor_report.py"
+  - "pytest -q tests/test_hud_qml_smoke.py tests/test_hud_qml_ux_wiring.py"

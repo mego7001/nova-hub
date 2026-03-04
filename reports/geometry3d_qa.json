@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-02-06T20:38:22.765593Z",
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Simple box",
+      "passed": true,
+      "detail": "[{'id': 'box_3_8937', 'type': 'box', 'dims': {'x': 100.0, 'y': 80.0, 'z': 60.0}, 'position': {'x': 0.0, 'y': 0.0, 'z': 0.0}, 'material': '', 'support': '', 'load': '', 'hollow': False, 'thickness': 0.0}]"
+    },
+    {
+      "name": "Cylinder dims",
+      "passed": true,
+      "detail": "[{'id': 'cylinder_2_4445', 'type': 'cylinder', 'dims': {'diameter': 200.0, 'height': 1200.0}, 'position': {'x': 0.0, 'y': 0.0, 'z': 0.0}, 'material': '', 'support': '', 'load': '', 'hollow': False, 'thickness': 1200.0}]"
+    },
+    {
+      "name": "Cantilever warning",
+      "passed": true,
+      "detail": "warnings=[{'severity': 'WARNING', 'title': 'Slenderness', 'detail': 'الشكل طويل ورفيع؛ في احتمال انبعاج أو اهتزاز.'}, {'severity': 'WARNING', 'title': 'Support', 'detail': 'النموذج كابولي أو غير مدعوم؛ المخاطر عالية بدون تثبيت واضح.'}]"
+    },
+    {
+      "name": "Ambiguous description",
+      "passed": true,
+      "detail": "confidence=0.0"
+    },
+    {
+      "name": "Arabic+English input",
+      "passed": true,
+      "detail": "[{'id': 'cylinder_2_9366', 'type': 'cylinder', 'dims': {'diameter': 120.0, 'height': 500.0}, 'position': {'x': 0.0, 'y': 0.0, 'z': 0.0}, 'material': '', 'support': '', 'load': '', 'hollow': False, 'thickness': 0.0}]"
+    }
+  ],
+  "limitations": [
+    "QA uses offline parser only; UI preview not exercised."
+  ]
+}

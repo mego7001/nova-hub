@@ -1,0 +1,13 @@
+{
+  "id": "voice",
+  "name": "Voice Tools",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.voice.plugin",
+  "tool_groups": ["fs_write", "process_exec"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

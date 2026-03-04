@@ -1,0 +1,12 @@
+{
+  "id": "stable_diffusion",
+  "kind": "integration",
+  "name": "Local Stable Diffusion",
+  "version": "0.1.0",
+  "entrypoint": "integrations.stable_diffusion.plugin",
+  "tool_groups": ["media_gen"],
+  "config": {
+    "api_url": "http://127.0.0.1:7860",
+    "output_dir": "outputs"
+  }
+}

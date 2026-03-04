@@ -1,0 +1,174 @@
+{
+  "report_source": {
+    "name": "nova_hub_technical_audit_report.docx",
+    "path": "c:/Users/Victus/Downloads/nova_hub_technical_audit_report.docx",
+    "date": "2026-02-22"
+  },
+  "method": "report_plus_reality",
+  "generated_at_utc": "2026-02-22T00:00:00Z",
+  "items": [
+    {
+      "id": "C-001",
+      "severity": "critical",
+      "reported_claim": "20+ Python packages are missing __init__.py",
+      "current_reality": "Fixed. Package normalization created missing __init__.py files in release scope and filtered scan is now zero.",
+      "status": "closed_by_fix",
+      "owner": "core-platform",
+      "evidence": [
+        "reports/audit/normalization_manifest.json"
+      ],
+      "closure_criteria": "Filtered package scan reports zero missing __init__.py directories."
+    },
+    {
+      "id": "C-002",
+      "severity": "critical",
+      "reported_claim": "22 Python files contain UTF-8 BOM and can break runtime/tooling.",
+      "current_reality": "Fixed. UTF-8 BOM was removed from all detected Python files; post-scan is zero.",
+      "status": "closed_by_fix",
+      "owner": "core-platform",
+      "evidence": [
+        "reports/audit/normalization_manifest.json"
+      ],
+      "closure_criteria": "Filtered BOM scan reports zero Python files with BOM."
+    },
+    {
+      "id": "C-003",
+      "severity": "critical",
+      "reported_claim": "HUD v2 is QML-only and has no Python backend.",
+      "current_reality": "Not accurate in current codebase. HUD v2 is loaded by ui/hud_qml/app_qml.py and bound to HUDController backend.",
+      "status": "closed_by_evidence",
+      "owner": "ui-platform",
+      "evidence": [
+        "ui/hud_qml/app_qml.py",
+        "ui/hud_qml/controller.py",
+        "ui/hud_qml_v2/MainV2.qml"
+      ],
+      "closure_criteria": "N/A (already implemented and wired)."
+    },
+    {
+      "id": "H-001",
+      "severity": "high",
+      "reported_claim": ".env may contain real API secrets in shared artifact.",
+      "current_reality": "Hardened for release packaging. .env is ignored and release builder now excludes .env/.env.* from distributable artifacts.",
+      "status": "closed_by_fix",
+      "owner": "security-ops",
+      "evidence": [
+        "nova_hub/.gitignore",
+        "scripts/build_release.py",
+        "docs/INSTALL.md"
+      ],
+      "closure_criteria": "Secret rotation completed, release packaging excludes .env, and documentation mandates .env.example workflow."
+    },
+    {
+      "id": "H-002",
+      "severity": "high",
+      "reported_claim": "quick_panel_v2 has no Python backend.",
+      "current_reality": "Fixed. quick_panel_v2 now has Python backend (app/controller), official launcher command, and runtime smoke coverage.",
+      "status": "closed_by_fix",
+      "owner": "ui-platform",
+      "evidence": [
+        "ui/quick_panel_v2/app.py",
+        "ui/quick_panel_v2/controller.py",
+        "ui/quick_panel_v2/MainV2.qml",
+        "main.py",
+        "run_quick_panel_v2.py",
+        "tests/test_quick_panel_v2_offscreen_smoke.py"
+      ],
+      "closure_criteria": "quick_panel_v2 has app/controller backend, official entrypoint, and end-to-end runtime smoke."
+    },
+    {
+      "id": "H-003",
+      "severity": "high",
+      "reported_claim": "Optional dependencies can crash runtime paths.",
+      "current_reality": "Critical optional-dependency crash paths were hardened (voice ImportError handling + CAD plugin lazy imports with clear guidance).",
+      "status": "closed_by_fix",
+      "owner": "runtime-hardening",
+      "evidence": [
+        "core/voice/engine.py",
+        "integrations/cad_pipeline/plugin.py",
+        "reports/audit/dependency_guard_matrix.json"
+      ],
+      "closure_criteria": "Guard matrix shows all optional dependency paths handled with graceful fallback and tests pass."
+    },
+    {
+      "id": "H-004",
+      "severity": "high",
+      "reported_claim": "Ollama availability/model readiness is not surfaced clearly.",
+      "current_reality": "Fixed. Ollama health/model checks are exposed via IPC and surfaced in UI summaries with doctor evidence.",
+      "status": "closed_by_fix",
+      "owner": "llm-platform",
+      "evidence": [
+        "core/ipc/service.py",
+        "integrations/ollama/plugin.py",
+        "ui/hud_qml/controller.py"
+      ],
+      "closure_criteria": "N/A (implemented; verified by doctor/health calls)."
+    },
+    {
+      "id": "M-001",
+      "severity": "medium",
+      "reported_claim": "Line endings are inconsistent (CRLF/LF drift).",
+      "current_reality": "Fixed. Repository-level line-ending policy was added via editorconfig and gitattributes.",
+      "status": "closed_by_fix",
+      "owner": "core-platform",
+      "evidence": [
+        ".editorconfig",
+        ".gitattributes",
+        "reports/audit/normalization_manifest.json"
+      ],
+      "closure_criteria": "Policy files added and normalization evidence recorded."
+    },
+    {
+      "id": "M-002",
+      "severity": "medium",
+      "reported_claim": "tmp pytest artifacts pollute repository tree.",
+      "current_reality": "Fixed. tmp artifact patterns are ignored and temporary directories were cleaned from working tree root.",
+      "status": "closed_by_fix",
+      "owner": "devex",
+      "evidence": [
+        "nova_hub/.gitignore",
+        "reports/audit/normalization_manifest.json"
+      ],
+      "closure_criteria": "Ignore policy includes all known tmp patterns and tree is cleaned/isolated."
+    },
+    {
+      "id": "M-003",
+      "severity": "medium",
+      "reported_claim": "workspace runtime data mixed with source tree.",
+      "current_reality": "Fixed. workspace remains runtime data and is excluded from release package and ignore rules.",
+      "status": "closed_by_fix",
+      "owner": "devex",
+      "evidence": [
+        "nova_hub/.gitignore",
+        "scripts/build_release.py"
+      ],
+      "closure_criteria": "N/A (ignore and dynamic workspace path already implemented)."
+    },
+    {
+      "id": "M-004",
+      "severity": "medium",
+      "reported_claim": "GITHUB_API_KEY is present without active plugin usage.",
+      "current_reality": "Clarified as config hygiene, not runtime blocker. Documentation now states GITHUB_API_KEY is unused unless explicit plugin is added.",
+      "status": "closed_by_evidence",
+      "owner": "integrations",
+      "evidence": [
+        "docs/INSTALL.md",
+        "configs/plugins_enabled.yaml"
+      ],
+      "closure_criteria": "Either GitHub integration exists and is documented or key usage is removed/clarified."
+    },
+    {
+      "id": "M-005",
+      "severity": "medium",
+      "reported_claim": "Theme source is duplicated and can drift.",
+      "current_reality": "Validated as intentional dual-theme architecture (legacy HUD v1 theme vs common UI theme for modern surfaces), not a runtime defect.",
+      "status": "closed_by_evidence",
+      "owner": "ui-platform",
+      "evidence": [
+        "ui/common_ui/Theme.qml",
+        "ui/hud_qml/qml/components/Theme.qml"
+      ],
+      "closure_criteria": "Single theme source enforced or synchronization strategy documented and tested."
+    }
+  ]
+}

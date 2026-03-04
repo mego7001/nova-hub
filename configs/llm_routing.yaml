@@ -1,0 +1,55 @@
+selector:
+  window_days: 7
+  max_calls_per_group: 200
+  min_calls_for_dynamic: 20
+  cooldown_minutes: 15
+  build_min_success_rate: 0.85
+
+mode_weights:
+  general:
+    quality: 0.35
+    cost: 0.30
+    latency: 0.25
+    error_rate: 0.10
+  build_software:
+    quality: 0.60
+    cost: 0.10
+    latency: 0.10
+    error_rate: 0.20
+  gen_3d_step:
+    quality: 0.55
+    cost: 0.10
+    latency: 0.10
+    error_rate: 0.25
+  gen_2d_dxf:
+    quality: 0.55
+    cost: 0.10
+    latency: 0.10
+    error_rate: 0.25
+
+fallback_order:
+  general: [ollama, deepseek, gemini, openai]
+  build_software: [ollama, deepseek, gemini, openai]
+  gen_3d_step: [ollama, deepseek, gemini, openai]
+  gen_2d_dxf: [ollama, deepseek, gemini, openai]
+
+router:
+  default_provider: ollama
+  local_first: true
+  external_backup_only: true
+  fallbacks: [ollama, deepseek, gemini, openai]
+  task_map:
+    conversation: auto
+    summarize_docs: auto
+    deep_reasoning: auto
+    patch_planning: ollama
+    vision: ollama
+  task_model_map:
+    conversation: "gemma3:4b"
+    summarize_docs: "gemma3:4b"
+    deep_reasoning: "qwen2.5-coder:7b-instruct"
+    gen_2d_dxf: "qwen2.5-coder:7b-instruct"
+    gen_3d_step: "qwen2.5-coder:7b-instruct"
+    build_software: "qwen2.5-coder:7b-instruct"
+    patch_planning: "qwen2.5-coder:7b-instruct"
+    vision: "llava"

@@ -1,0 +1,13 @@
+{
+  "id": "pipeline",
+  "name": "Pipeline",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.pipeline.plugin",
+  "tool_groups": ["fs_read", "fs_write", "process_exec"],
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

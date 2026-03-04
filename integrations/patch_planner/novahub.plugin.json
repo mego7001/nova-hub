@@ -1,0 +1,23 @@
+{
+  "id": "patch_planner",
+  "name": "Patch Planner",
+  "version": "0.1.0",
+  "kind": "integration",
+  "entrypoint": "integrations.patch_planner.plugin",
+  "tool_groups": [
+    "fs_read",
+    "fs_write"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "default_output_dir": {
+        "type": "string"
+      },
+      "default_reports_dir": {
+        "type": "string"
+      }
+    },
+    "required": []
+  }
+}

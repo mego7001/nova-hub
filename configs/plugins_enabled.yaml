@@ -1,0 +1,110 @@
+enabled:
+  - fs_read_tools
+  - project_scanner
+  - patch_planner
+  - patch_apply
+  - verify
+  - pipeline
+  - conversation
+  - desktop
+  - run_preview
+  - core_examples
+  - git
+  - telegram
+  - gemini
+  - deepseek
+  - openai
+  - nesting_app
+  - conical_app
+  - halftone_app
+  - security_doctor
+  - sketch
+  - cad_pipeline
+  - voice
+  - stable_diffusion
+  - ollama
+configs:
+  stable_diffusion:
+    api_url: "http://127.0.0.1:7860"
+    output_dir: "outputs"
+  fs_read_tools: {}
+  project_scanner:
+    default_exclude_globs:
+      - ".git"
+      - ".venv"
+      - "venv"
+      - "__pycache__"
+      - "node_modules"
+      - "dist"
+      - "build"
+      - "outputs"
+      - "logs"
+      - "reports"
+      - "patches"
+    max_file_bytes: 200000
+  patch_planner:
+    default_output_dir: "patches"
+    default_reports_dir: "reports"
+  patch_apply:
+    default_backup_suffix: ".bak"
+    default_reports_dir: "reports"
+  verify:
+    timeout_sec: 60
+    reports_dir: "reports"
+  pipeline: {}
+  conversation: {}
+  desktop: {}
+  core_examples:
+    note: "Base platform sanity plugin"
+  git:
+    repo_path: "."
+    allow_commit: false
+  telegram:
+    bot_token: ""
+    default_chat_id: ""
+    timeout_sec: 20
+  gemini:
+    api_key: ""
+    model: "gemini-1.5-pro"
+    timeout_sec: 40
+  deepseek:
+    api_key: ""
+    model: "deepseek-chat"
+    base_url: "https://api.deepseek.com/v1"
+    timeout_sec: 45
+  openai:
+    api_key: ""
+    model: "gpt-4o-mini"
+    base_url: "https://api.openai.com/v1"
+    timeout_sec: 45
+  nesting_app:
+    sheet_w: 3000
+    sheet_h: 1500
+    gap: 5
+  conical_app:
+    r_bottom: 200
+    r_top: 80
+    pitch: 30
+    turns: 6
+    # if omitted, height defaults to turns*pitch
+  halftone_app:
+    grid_w: 60
+    grid_h: 40
+    max_r: 6
+  security_doctor: {}
+  sketch: {}
+  cad_pipeline: {}
+  voice: {}
+  ollama:
+    enabled: true
+    # Default local general model (conversation/reasoning)
+    model: "gemma3:4b"
+    model_general: "gemma3:4b"
+    model_code: "qwen2.5-coder:7b-instruct"
+    model_vision: "llava"
+    # Task-specific routing is controlled by configs/llm_routing.yaml router.task_model_map:
+    # - build_software/patch_planning -> qwen2.5-coder:7b-instruct
+    # - vision -> llava
+    base_url: "http://127.0.0.1:11434"
+    connect_timeout_sec: 0.5
+    timeout_sec: 120

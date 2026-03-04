@@ -1,0 +1,25 @@
+{
+  "id": "git",
+  "name": "Git Integration",
+  "version": "1.0.0",
+  "kind": "integration",
+  "entrypoint": "integrations.git.plugin",
+  "tool_groups": [
+    "git",
+    "process_exec"
+  ],
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "repo_path": {
+        "type": "string"
+      },
+      "allow_commit": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "repo_path"
+    ]
+  }
+}

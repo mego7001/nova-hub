@@ -1,0 +1,425 @@
+{
+  "timestamp": "2026-01-30T23:42:15.632976Z",
+  "root_path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub",
+  "query": null,
+  "regex": false,
+  "extensions": [],
+  "max_matches": 500,
+  "total_matches": 45,
+  "matches": [
+    {
+      "type": "commented_code",
+      "path": ".env.example",
+      "line": 1,
+      "excerpt": "# Copy to .env and fill values (DO NOT COMMIT)"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": ".gitignore",
+      "line": 5,
+      "excerpt": "logs/*.jsonl"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": ".gitignore",
+      "line": 6,
+      "excerpt": "outputs/*"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": ".gitignore",
+      "line": 7,
+      "excerpt": "!outputs/README.md"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "main.py",
+      "line": 35,
+      "excerpt": "ans = input(\"Approve? (y/n): \").strip().lower()"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/approvals.yaml",
+      "line": 8,
+      "excerpt": "pattern: \"**/.ssh/**\""
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/approvals.yaml",
+      "line": 12,
+      "excerpt": "pattern: \"**/.env\""
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/approvals.yaml",
+      "line": 22,
+      "excerpt": "pattern: \"outputs/**\""
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/approvals.yaml",
+      "line": 40,
+      "excerpt": "unless_path_glob: \"outputs/**\""
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/plugins_enabled.yaml",
+      "line": 44,
+      "excerpt": "base_url: \"https://api.deepseek.com/v1\""
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/tool_policy.yaml",
+      "line": 16,
+      "excerpt": "domain_conical:  { description: \"Conical/helix compute\", base_risk: 0.20 }"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "configs/tool_policy.yaml",
+      "line": 28,
+      "excerpt": "# fs_write is allowed; approvals.yaml decides when approval is required (e.g., outside outputs/)"
+    },
+    {
+      "type": "commented_code",
+      "path": "docs/QUICKSTART.md",
+      "line": 1,
+      "excerpt": "# Nova Hub (NH) \u2014 Single-host Platform (Plugins + Approvals)"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "docs/QUICKSTART.md",
+      "line": 9,
+      "excerpt": "# Linux/Mac:"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "docs/QUICKSTART.md",
+      "line": 10,
+      "excerpt": "source .venv/bin/activate"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/novahub.plugin.json",
+      "line": 3,
+      "excerpt": "\"name\": \"NH Conical/Helix Example\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 3,
+      "excerpt": "\"\"\"Conical helix / spiral generator."
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 8,
+      "excerpt": "z(theta) = (pitch / (2*pi)) * theta"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 9,
+      "excerpt": "r(z) = rb + (rt-rb) * (z/H)"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 50,
+      "excerpt": "theta = (i / n) * theta_max"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 51,
+      "excerpt": "z = (pitch / (2.0 * math.pi)) * theta"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 54,
+      "excerpt": "r = r_bottom + (r_top - r_bottom) * (zc / height)"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 76,
+      "excerpt": "out_dxf: str = \"outputs/conical_helix_xy.dxf\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/conical_app/plugin.py",
+      "line": 110,
+      "excerpt": "default_target=\"outputs/conical_helix_xy.dxf\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/core_examples/plugin.py",
+      "line": 20,
+      "excerpt": "description=\"Write a text file (approval guarded; prefer outputs/)\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/core_examples/plugin.py",
+      "line": 21,
+      "excerpt": "default_target=\"outputs/hello.txt\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/deepseek/plugin.py",
+      "line": 12,
+      "excerpt": "base_url = str(config.get(\"base_url\") or \"https://api.deepseek.com/v1\").rstrip(\"/\")"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/deepseek/plugin.py",
+      "line": 20,
+      "excerpt": "url = f\"{base_url}/chat/completions\""
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/deepseek/plugin.py",
+      "line": 21,
+      "excerpt": "headers={\"Authorization\": f\"Bearer {key}\", \"Content-Type\":\"application/json\"}"
+    },
+    {
+      "type": "todo",
+      "path": "integrations/fs_read_tools/plugin.py",
+      "line": 123,
+      "excerpt": "rec.append(\"No obvious hotspots detected; review TODOs/FIXMEs first.\")"
+    },
+    {
+      "type": "todo",
+      "path": "integrations/fs_read_tools/plugin.py",
+      "line": 198,
+      "excerpt": "auto_terms = [\"TODO\", \"FIXME\", \"HACK\", \"XXX\"]"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/fs_read_tools/plugin.py",
+      "line": 199,
+      "excerpt": "hardcoded_re = re.compile(r\"([A-Za-z]:\\\\\\\\|/)([^\\\\s\\\"']+)\")"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/fs_read_tools/plugin.py",
+      "line": 200,
+      "excerpt": "comment_code_re = re.compile(r\"^[\\\\s#//;]+.*[{}();]|\\\\b(class|def|function|return|if|for|while)\\\\b\")"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/fs_read_tools/plugin.py",
+      "line": 305,
+      "excerpt": "elif comment_code_re.search(line_stripped) and line_stripped.lstrip().startswith((\"#\", \"//\", \";\")):"
+    },
+    {
+      "type": "todo",
+      "path": "integrations/fs_read_tools/plugin.py",
+      "line": 408,
+      "excerpt": "description=\"Search repository for TODOs, risks, and hotspots\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/gemini/plugin.py",
+      "line": 18,
+      "excerpt": "url = f\"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}\""
+    },
+    {
+      "type": "risky_subprocess",
+      "path": "integrations/git/plugin.py",
+      "line": 13,
+      "excerpt": "p = subprocess.run(cmd, capture_output=True, text=True, check=False)"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/halftone_app/plugin.py",
+      "line": 13,
+      "excerpt": "def halftone_gradient(out_dxf: str=\"outputs/halftone_gradient.dxf\") -> Dict[str, Any]:"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/halftone_app/plugin.py",
+      "line": 16,
+      "excerpt": "cx=(grid_w-1)/2.0"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/halftone_app/plugin.py",
+      "line": 17,
+      "excerpt": "cy=(grid_h-1)/2.0"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/halftone_app/plugin.py",
+      "line": 22,
+      "excerpt": "d=math.hypot(i-cx, j-cy)/maxd"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/halftone_app/plugin.py",
+      "line": 40,
+      "excerpt": "default_target=\"outputs/halftone_gradient.dxf\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/nesting_app/plugin.py",
+      "line": 31,
+      "excerpt": "def solve(rects: List[List[float]], out_dxf: str=\"outputs/nesting_result.dxf\") -> Dict[str, Any]:"
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/nesting_app/plugin.py",
+      "line": 50,
+      "excerpt": "default_target=\"outputs/nesting_result.dxf\","
+    },
+    {
+      "type": "hardcoded_path",
+      "path": "integrations/telegram/plugin.py",
+      "line": 22,
+      "excerpt": "url = f\"https://api.telegram.org/bot{t}/sendMessage\""
+    }
+  ],
+  "hotspots": {
+    "files_with_most_hits": [
+      {
+        "path": "integrations/conical_app/plugin.py",
+        "hits": 8
+      },
+      {
+        "path": "integrations/fs_read_tools/plugin.py",
+        "hits": 6
+      },
+      {
+        "path": "integrations/halftone_app/plugin.py",
+        "hits": 5
+      },
+      {
+        "path": "configs/approvals.yaml",
+        "hits": 4
+      },
+      {
+        "path": ".gitignore",
+        "hits": 3
+      },
+      {
+        "path": "docs/QUICKSTART.md",
+        "hits": 3
+      },
+      {
+        "path": "integrations/deepseek/plugin.py",
+        "hits": 3
+      },
+      {
+        "path": "configs/tool_policy.yaml",
+        "hits": 2
+      },
+      {
+        "path": "integrations/core_examples/plugin.py",
+        "hits": 2
+      },
+      {
+        "path": "integrations/nesting_app/plugin.py",
+        "hits": 2
+      }
+    ],
+    "largest_files": [
+      {
+        "path": "integrations/fs_read_tools/plugin.py",
+        "bytes": 15735
+      },
+      {
+        "path": "integrations/project_scanner/plugin.py",
+        "bytes": 9433
+      },
+      {
+        "path": "core/permission_guard/approval_flow.py",
+        "bytes": 4364
+      },
+      {
+        "path": "integrations/conical_app/plugin.py",
+        "bytes": 4178
+      },
+      {
+        "path": "main.py",
+        "bytes": 4136
+      },
+      {
+        "path": "integrations/git/plugin.py",
+        "bytes": 2338
+      },
+      {
+        "path": "core/permission_guard/tool_policy.py",
+        "bytes": 2248
+      },
+      {
+        "path": "integrations/nesting_app/plugin.py",
+        "bytes": 2080
+      },
+      {
+        "path": "core/plugin_engine/loader.py",
+        "bytes": 1928
+      },
+      {
+        "path": "integrations/deepseek/plugin.py",
+        "bytes": 1783
+      },
+      {
+        "path": "configs/tool_policy.yaml",
+        "bytes": 1731
+      },
+      {
+        "path": "integrations/halftone_app/plugin.py",
+        "bytes": 1688
+      },
+      {
+        "path": "integrations/gemini/plugin.py",
+        "bytes": 1593
+      },
+      {
+        "path": "integrations/telegram/plugin.py",
+        "bytes": 1531
+      },
+      {
+        "path": "configs/approvals.yaml",
+        "bytes": 1517
+      },
+      {
+        "path": "core/plugin_engine/registry.py",
+        "bytes": 1432
+      },
+      {
+        "path": "core/utils/dxf_min.py",
+        "bytes": 1383
+      },
+      {
+        "path": "core/plugin_engine/schema.py",
+        "bytes": 1313
+      },
+      {
+        "path": "core/permission_guard/risk.py",
+        "bytes": 1129
+      },
+      {
+        "path": "core/plugin_engine/manifest.py",
+        "bytes": 1110
+      }
+    ],
+    "suspicious_files": [],
+    "config_hotspots": [
+      ".env.example",
+      "configs/approvals.yaml",
+      "configs/plugins_enabled.yaml",
+      "configs/tool_policy.yaml",
+      "integrations/conical_app/novahub.plugin.json",
+      "integrations/core_examples/novahub.plugin.json",
+      "integrations/deepseek/novahub.plugin.json",
+      "integrations/fs_read_tools/novahub.plugin.json",
+      "integrations/gemini/novahub.plugin.json",
+      "integrations/git/novahub.plugin.json",
+      "integrations/halftone_app/novahub.plugin.json",
+      "integrations/nesting_app/novahub.plugin.json",
+      "integrations/project_scanner/novahub.plugin.json",
+      "integrations/telegram/novahub.plugin.json",
+      "requirements.txt"
+    ]
+  }
+}

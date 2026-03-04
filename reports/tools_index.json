@@ -1,0 +1,518 @@
+{
+  "generated_at": "2026-02-18T01:16:06.519346+00:00",
+  "tools_total": 36,
+  "tools": [
+    {
+      "tool_id": "cad.dxf.generate",
+      "plugin_id": "cad_pipeline",
+      "tool_group": "fs_write",
+      "op": "cad_dxf_generate",
+      "description": "Generate a 2D DXF artifact from text spec or params.",
+      "default_target": "outputs/generated_shape.dxf",
+      "handler_signature": "cad_dxf_generate(spec_text: 'str' = '', params: 'Optional[Mapping[str, Any]]' = None, output_path: 'str' = 'outputs/generated_shape.dxf', units: 'str' = 'mm', layer: 'str' = 'OUTLINE') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": [
+        "gen_2d_dxf"
+      ]
+    },
+    {
+      "tool_id": "cad.step.generate",
+      "plugin_id": "cad_pipeline",
+      "tool_group": "fs_write",
+      "op": "cad_step_generate",
+      "description": "Generate a 3D STEP artifact from text spec or params (optional cadquery).",
+      "default_target": "outputs/generated_part.step",
+      "handler_signature": "cad_step_generate(spec_text: 'str' = '', params: 'Optional[Mapping[str, Any]]' = None, output_path: 'str' = 'outputs/generated_part.step') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_3d_step"
+      ],
+      "curated_modes": [
+        "gen_3d_step"
+      ]
+    },
+    {
+      "tool_id": "conical.generate_helix",
+      "plugin_id": "conical_app",
+      "tool_group": "fs_write",
+      "op": "conical_generate_helix",
+      "description": "Generate a conical helix (XY projection) and export DXF to outputs/",
+      "default_target": "outputs/conical_helix_xy.dxf",
+      "handler_signature": "conical_generate_helix(turns: 'Optional[float]' = None, pitch: 'Optional[float]' = None, r_bottom: 'Optional[float]' = None, r_top: 'Optional[float]' = None, height: 'Optional[float]' = None, segments_per_turn: 'Optional[int]' = None, out_dxf: 'str' = 'outputs/conical_helix_xy.dxf', layer: 'str' = 'CONICAL_HELIX') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "conversation.chat",
+      "plugin_id": "conversation",
+      "tool_group": "fs_read",
+      "op": "conversation_chat",
+      "description": "Rule-based chat assistant for Nova Hub",
+      "default_target": null,
+      "handler_signature": "conversation_chat(user_message: 'str', project_path: 'str', session_id: 'str' = 'default', write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general",
+        "build_software",
+        "gen_3d_step",
+        "gen_2d_dxf"
+      ],
+      "curated_modes": [
+        "general",
+        "build_software",
+        "gen_3d_step",
+        "gen_2d_dxf"
+      ]
+    },
+    {
+      "tool_id": "deepseek.chat",
+      "plugin_id": "deepseek",
+      "tool_group": "deepseek",
+      "op": "deepseek_chat",
+      "description": "DeepSeek chat.completions (approval)",
+      "default_target": "deepseek-chat",
+      "handler_signature": "deepseek_chat(prompt: 'str', system: 'Optional[str]' = None, temperature: 'Optional[float]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "desktop.open_chrome",
+      "plugin_id": "desktop",
+      "tool_group": "process_exec",
+      "op": "desktop_open_chrome",
+      "description": "Open Chrome to an allowlisted URL (https only)",
+      "default_target": null,
+      "handler_signature": "desktop_open_chrome(url: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "desktop.open_folder",
+      "plugin_id": "desktop",
+      "tool_group": "process_exec",
+      "op": "desktop_open_folder",
+      "description": "Open Explorer for a workspace folder (allowlisted)",
+      "default_target": null,
+      "handler_signature": "desktop_open_folder(path: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "desktop.open_vscode",
+      "plugin_id": "desktop",
+      "tool_group": "process_exec",
+      "op": "desktop_open_vscode",
+      "description": "Open VS Code in a folder (allowlisted)",
+      "default_target": null,
+      "handler_signature": "desktop_open_vscode(path: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "fs.list_dir",
+      "plugin_id": "fs_read_tools",
+      "tool_group": "fs_read",
+      "op": "fs_list_dir",
+      "description": "List directory entries",
+      "default_target": ".",
+      "handler_signature": "fs_list_dir(path: 'str' = '.') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "fs.read_text",
+      "plugin_id": "fs_read_tools",
+      "tool_group": "fs_read",
+      "op": "fs_read_text",
+      "description": "Read a text file safely (binary guarded)",
+      "default_target": null,
+      "handler_signature": "fs_read_text(path: 'str', max_bytes: 'int' = 200000) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "fs.write_text",
+      "plugin_id": "core_examples",
+      "tool_group": "fs_write",
+      "op": "fs_write",
+      "description": "Write a text file (approval guarded; prefer outputs/)",
+      "default_target": "outputs/hello.txt",
+      "handler_signature": "fs_write(path: 'str', text: 'str', target: 'str | None' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "gemini.prompt",
+      "plugin_id": "gemini",
+      "tool_group": "gemini",
+      "op": "gemini_prompt",
+      "description": "Gemini generateContent (approval)",
+      "default_target": "gemini-1.5-pro",
+      "handler_signature": "gemini_prompt(text: 'str', system: 'Optional[str]' = None, temperature: 'Optional[float]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "git.commit",
+      "plugin_id": "git",
+      "tool_group": "git",
+      "op": "git_commit",
+      "description": "Git commit (approval + allow_commit=true)",
+      "default_target": "D:\\nouva hub\\nova_hub_v1_release\\nova_hub",
+      "handler_signature": "git_commit(message: 'str', repo_path: 'Optional[str]' = None, all: 'bool' = False) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "git.diff",
+      "plugin_id": "git",
+      "tool_group": "git",
+      "op": "git_diff",
+      "description": "Git diff",
+      "default_target": "D:\\nouva hub\\nova_hub_v1_release\\nova_hub",
+      "handler_signature": "git_diff(repo_path: 'Optional[str]' = None, args: 'Optional[list[str]]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "git.status",
+      "plugin_id": "git",
+      "tool_group": "git",
+      "op": "git_status",
+      "description": "Git status",
+      "default_target": "D:\\nouva hub\\nova_hub_v1_release\\nova_hub",
+      "handler_signature": "git_status(repo_path: 'Optional[str]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "halftone.generate_pattern",
+      "plugin_id": "halftone_app",
+      "tool_group": "fs_write",
+      "op": "halftone_generate_pattern",
+      "description": "Generate radial halftone (circles) and export DXF to outputs/",
+      "default_target": "outputs/halftone_gradient.dxf",
+      "handler_signature": "halftone_generate_pattern(out_dxf: 'str' = 'outputs/halftone_gradient.dxf') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "nesting.solve_rectangles",
+      "plugin_id": "nesting_app",
+      "tool_group": "fs_write",
+      "op": "nesting_solve_rectangles",
+      "description": "Greedy shelf pack rectangles and export DXF to outputs/",
+      "default_target": "outputs/nesting_result.dxf",
+      "handler_signature": "nesting_solve_rectangles(rects: 'List[List[float]]', out_dxf: 'str' = 'outputs/nesting_result.dxf') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "ollama.chat",
+      "plugin_id": "ollama",
+      "tool_group": "ollama",
+      "op": "ollama_chat",
+      "description": "Ollama local chat (model=llama3)",
+      "default_target": "llama3",
+      "handler_signature": "ollama_chat(prompt: 'str', system: 'Optional[str]' = None, images: 'Optional[List[str]]' = None, temperature: 'Optional[float]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "openai.chat",
+      "plugin_id": "openai",
+      "tool_group": "openai",
+      "op": "openai_chat",
+      "description": "OpenAI chat.completions (approval)",
+      "default_target": "gpt-4o-mini",
+      "handler_signature": "openai_chat(prompt: 'str', system: 'Optional[str]' = None, temperature: 'Optional[float]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "patch.apply",
+      "plugin_id": "patch_apply",
+      "tool_group": "fs_write",
+      "op": "patch_apply",
+      "description": "Apply a unified diff file with backups (approval required)",
+      "default_target": null,
+      "handler_signature": "patch_apply(diff_path: 'str', target_root: 'str' = '.', create_backup: 'bool' = True, backup_suffix: 'str' = '.bak', write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software"
+      ],
+      "curated_modes": [
+        "build_software"
+      ]
+    },
+    {
+      "tool_id": "patch.plan",
+      "plugin_id": "patch_planner",
+      "tool_group": "fs_write",
+      "op": "patch_plan",
+      "description": "Plan safe patches and generate unified diffs",
+      "default_target": "patches",
+      "handler_signature": "patch_plan(target_root: 'str' = '.', goal: 'str' = '', constraints: 'Optional[str]' = None, max_files: 'int' = 10, write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software"
+      ],
+      "curated_modes": [
+        "build_software"
+      ]
+    },
+    {
+      "tool_id": "pipeline.run",
+      "plugin_id": "pipeline",
+      "tool_group": "fs_write",
+      "op": "pipeline_run",
+      "description": "Run scan->search->plan->(apply)->verify pipeline",
+      "default_target": null,
+      "handler_signature": "pipeline_run(target_root: 'str' = '.', goal: 'str' = '', apply_diff: 'bool' = False, max_files: 'int' = 10, write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software"
+      ],
+      "curated_modes": [
+        "build_software"
+      ]
+    },
+    {
+      "tool_id": "project.scan_repo",
+      "plugin_id": "project_scanner",
+      "tool_group": "fs_read",
+      "op": "project_scan",
+      "description": "Scan repository tree and write reports",
+      "default_target": ".",
+      "handler_signature": "project_scan(root_path: 'str' = '.', include_globs: 'Optional[List[str]]' = None, exclude_globs: 'Optional[List[str]]' = None, write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general",
+        "build_software"
+      ],
+      "curated_modes": [
+        "build_software"
+      ]
+    },
+    {
+      "tool_id": "repo.search",
+      "plugin_id": "fs_read_tools",
+      "tool_group": "fs_read",
+      "op": "repo_search",
+      "description": "Search repository for TODOs, risks, and hotspots",
+      "default_target": ".",
+      "handler_signature": "repo_search(root_path: 'str' = '.', query: 'Optional[str]' = None, regex: 'bool' = False, extensions: 'Optional[List[str]]' = None, max_matches: 'int' = 500, write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general",
+        "build_software"
+      ],
+      "curated_modes": [
+        "general",
+        "build_software"
+      ]
+    },
+    {
+      "tool_id": "run.preview",
+      "plugin_id": "run_preview",
+      "tool_group": "process_exec",
+      "op": "run_preview",
+      "description": "Run a preview copy of the project (approval required)",
+      "default_target": null,
+      "handler_signature": "run_preview(project_id: 'str', profile_id: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software",
+        "gen_3d_step"
+      ],
+      "curated_modes": [
+        "gen_3d_step"
+      ]
+    },
+    {
+      "tool_id": "run.stop",
+      "plugin_id": "run_preview",
+      "tool_group": "process_exec",
+      "op": "run_stop",
+      "description": "Stop a running preview process",
+      "default_target": null,
+      "handler_signature": "run_stop(run_id: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software",
+        "gen_3d_step"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "security.audit",
+      "plugin_id": "security_doctor",
+      "tool_group": "fs_read",
+      "op": "security_audit",
+      "description": "Run security audit (read-only; report writing may require approval)",
+      "default_target": null,
+      "handler_signature": "security_audit(project_id: 'str' = '', write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software",
+        "general"
+      ],
+      "curated_modes": [
+        "build_software"
+      ]
+    },
+    {
+      "tool_id": "sketch.apply",
+      "plugin_id": "sketch",
+      "tool_group": "fs_write",
+      "op": "sketch_apply",
+      "description": "Apply sketch ops to sketch.json",
+      "default_target": null,
+      "handler_signature": "sketch_apply(project_id: 'str', ops: 'List[Dict[str, Any]]') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": [
+        "gen_2d_dxf"
+      ]
+    },
+    {
+      "tool_id": "sketch.export_dxf",
+      "plugin_id": "sketch",
+      "tool_group": "fs_write",
+      "op": "sketch_export_dxf",
+      "description": "Export sketch to DXF",
+      "default_target": null,
+      "handler_signature": "sketch_export_dxf(project_id: 'str', output_path: 'str' = '') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": [
+        "gen_2d_dxf"
+      ]
+    },
+    {
+      "tool_id": "sketch.parse",
+      "plugin_id": "sketch",
+      "tool_group": "fs_read",
+      "op": "sketch_parse",
+      "description": "Parse sketch description into operations",
+      "default_target": null,
+      "handler_signature": "sketch_parse(text: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "gen_2d_dxf"
+      ],
+      "curated_modes": [
+        "gen_2d_dxf"
+      ]
+    },
+    {
+      "tool_id": "stable_diffusion.generate",
+      "plugin_id": "stable_diffusion",
+      "tool_group": "media_gen",
+      "op": "generate_image",
+      "description": "Generate image using local Stable Diffusion with Hires.fix support",
+      "default_target": "outputs",
+      "handler_signature": "generate_image(prompt: 'str', negative_prompt: 'str' = '', width: 'int' = 512, height: 'int' = 512, steps: 'int' = 20, cfg_scale: 'float' = 7.0, enable_hr: 'bool' = False, hr_scale: 'float' = 2.0, hr_upscaler: 'str' = 'Latent', denoising_strength: 'float' = 0.7, model_name: 'Optional[str]' = None, output_dir: 'Optional[str]' = None, target: 'Optional[str]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "stable_diffusion.upscale",
+      "plugin_id": "stable_diffusion",
+      "tool_group": "media_gen",
+      "op": "upscale_image",
+      "description": "Upscale existing image using Stable Diffusion extras",
+      "default_target": "outputs",
+      "handler_signature": "upscale_image(image_path: 'str', upscaling_resize: 'float' = 2.0, upscaler_1: 'str' = 'R-ESRGAN 4x+', output_dir: 'Optional[str]' = None, target: 'Optional[str]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "telegram.send",
+      "plugin_id": "telegram",
+      "tool_group": "telegram",
+      "op": "telegram_send",
+      "description": "Send Telegram message (approval)",
+      "default_target": null,
+      "handler_signature": "telegram_send(text: 'str', chat_id: 'Optional[str]' = None, parse_mode: 'Optional[str]' = None) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    },
+    {
+      "tool_id": "verify.smoke",
+      "plugin_id": "verify",
+      "tool_group": "process_exec",
+      "op": "verify_smoke",
+      "description": "Run smoke checks (compileall, tool list, optional audit)",
+      "default_target": null,
+      "handler_signature": "verify_smoke(target_root: 'str' = '.', run_compileall: 'bool' = True, run_tool_list: 'bool' = True, run_optional_audit: 'bool' = False, write_reports: 'bool' = True) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "build_software",
+        "general"
+      ],
+      "curated_modes": [
+        "build_software",
+        "general"
+      ]
+    },
+    {
+      "tool_id": "voice.stt_record",
+      "plugin_id": "voice",
+      "tool_group": "fs_write",
+      "op": "voice_stt_record",
+      "description": "Record audio (optional STT) into workspace",
+      "default_target": null,
+      "handler_signature": "voice_stt_record(project_id: 'str', seconds: 'int' = 4) -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": [
+        "general"
+      ]
+    },
+    {
+      "tool_id": "voice.tts_speak",
+      "plugin_id": "voice",
+      "tool_group": "process_exec",
+      "op": "voice_tts_speak",
+      "description": "Speak text using offline TTS if available",
+      "default_target": null,
+      "handler_signature": "voice_tts_speak(text: 'str') -> 'Dict[str, Any]'",
+      "mode_tags": [
+        "general"
+      ],
+      "curated_modes": []
+    }
+  ]
+}

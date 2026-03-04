@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-02-23T12:25:00Z",
+  "target": "Unified Shell V3",
+  "profiles": [
+    "full",
+    "compact"
+  ],
+  "capabilities_total": 12,
+  "covered_with_binding_and_test": 12,
+  "coverage_percent": 100,
+  "notes": [
+    "Coverage computed against capability matrix in reports/final_ui_contract_matrix.md.",
+    "MainV2 files are now compatibility wrappers only; runtime roots are shell/MainShellFull.qml and shell/MainShellCompact.qml.",
+    "Approval semantics are inherited from backend and intentionally unchanged."
+  ],
+  "criteria": {
+    "mapping_exists": true,
+    "binding_exists": true,
+    "acceptance_test_exists": true
+  },
+  "structural_metrics": {
+    "hud_main_v2_lines_before": 1496,
+    "hud_main_v2_lines_after": 3,
+    "quick_main_v2_lines_before": 611,
+    "quick_main_v2_lines_after": 3,
+    "shell_full_root_lines": 945,
+    "shell_compact_root_lines": 584,
+    "shared_panel_files_active": 6,
+    "shared_shell_component_files_active": 2
+  },
+  "artifacts": {
+    "contract": "configs/panel_contract_v3.json",
+    "matrix": "reports/final_ui_contract_matrix.md"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-02-22T02:41:39Z",
+  "unstable_tests": [],
+  "results": [
+    {
+      "command": "pytest --collect-only -q",
+      "status": "pass",
+      "return_code": 0,
+      "duration_s": 0.968,
+      "reason": "",
+      "stdout_tail": "uting.py::test_mode_routing_roundtrip_reversible\ntests/test_ux_mode_routing.py::test_mode_routing_parse_plain_message_defaults_general\ntests/test_ux_mode_routing.py::test_mode_routing_sanitizes_context_for_single_line_wrapper\ntests/test_ux_task_modes.py::test_task_modes_hide_unavailable_by_default\ntests/test_ux_task_modes.py::test_task_modes_include_available_tool_backed_modes\ntests/test_ux_task_modes.py::test_available_task_modes_return_v1_ids_only\ntests/test_ux_task_modes.py::test_normalize_task_mode_falls_back_to_general\ntests/test_ux_tools_catalog.py::test_tools_catalog_groups_and_curated_entries\ntests/test_ux_tools_catalog.py::test_tools_catalog_badges_reflect_policy\ntests/test_ux_tools_catalog.py::test_tools_catalog_curated_changes_with_mode\ntests/test_ux_tools_registry.py::test_tools_registry_curated_build_mode_contains_patch_flow\ntests/test_ux_tools_registry.py::test_tools_registry_curated_dxf_mode_focuses_geometry_tools\ntests/test_ux_tools_registry.py::test_tools_registry_unknown_tool_falls_back_to_general\ntests/test_ux_upload_policy.py::test_upload_policy_accepts_supported_and_rejects_unsupported\ntests/test_ux_upload_policy.py::test_upload_policy_enforces_general_quota\ntests/test_ux_upload_policy.py::test_upload_policy_project_has_larger_budget\ntests/test_ux_upload_policy.py::test_scan_storage_usage_counts_files_and_bytes\ntests/test_voice_loop.py::test_voice_loop_state_transitions_single_turn\ntests/test_voice_loop.py::test_voice_loop_replay_uses_last_spoken_text\ntests/test_voice_loop.py::test_voice_loop_barge_in_stops_tts\ntests/test_voice_manager_config_update.py::test_voice_manager_set_config_updates_frozen_config_without_mutation_error\ntests/test_voice_manager_config_update.py::test_voice_manager_set_config_ignores_unknown_keys\n\n164 tests collected in 0.51s\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "pytest -q tests/test_no_naive_utcnow.py",
+      "status": "pass",
+      "return_code": 0,
+      "duration_s": 0.376,
+      "reason": "",
+      "stdout_tail": ".                                                                        [100%]\n1 passed in 0.03s\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "pytest -q tests/test_entrypoint_wrappers.py tests/test_main_dispatch.py tests/test_docs_launch_smoke.py tests/test_launchers_compat_smoke.py",
+      "status": "pass",
+      "return_code": 0,
+      "duration_s": 2.457,
+      "reason": "",
+      "stdout_tail": "............................                                             [100%]\n28 passed in 2.00s\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "pytest -q tests/test_ipc_server_health.py tests/test_ipc_chat_send_smoke.py tests/test_ipc_autospawn.py tests/test_ipc_reconnect_respawn.py",
+      "status": "pass",
+      "return_code": 0,
+      "duration_s": 4.617,
+      "reason": "",
+      "stdout_tail": "....                                                                     [100%]\n4 passed in 4.19s\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "pytest -q tests/test_gating.py tests/test_project_manager_security.py tests/test_online_policy_multilingual.py tests/test_doctor_report.py",
+      "status": "pass",
+      "return_code": 0,
+      "duration_s": 0.927,
+      "reason": "",
+      "stdout_tail": "........                                                                 [100%]\n8 passed in 0.51s\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "pytest -q tests/test_hud_qml_smoke.py tests/test_hud_qml_ux_wiring.py",
+      "status": "pass",
+      "return_code": 0,
+      "duration_s": 0.724,
+      "reason": "",
+      "stdout_tail": "...                                                                      [100%]\n3 passed in 0.35s\n",
+      "stderr_tail": ""
+    }
+  ]
+}

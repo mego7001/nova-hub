@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-01-31T00:09:59.000397Z",
+  "target_root": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub",
+  "goal": "Prepare safe mechanical patches for repo hygiene",
+  "constraints": "Do not change source code without explicit request",
+  "inputs": {
+    "project_scan": true,
+    "repo_search": true,
+    "audit_python": false
+  },
+  "selected_files": [
+    "integrations/conical_app/plugin.py",
+    "integrations/fs_read_tools/plugin.py",
+    "integrations/halftone_app/plugin.py",
+    "configs/approvals.yaml",
+    ".gitignore",
+    "docs/QUICKSTART.md",
+    "integrations/deepseek/plugin.py",
+    "configs/tool_policy.yaml",
+    "integrations/core_examples/plugin.py",
+    "integrations/nesting_app/plugin.py"
+  ],
+  "rationale": {
+    "integrations/conical_app/plugin.py": "hotspot: most hits",
+    "integrations/fs_read_tools/plugin.py": "hotspot: most hits",
+    "integrations/halftone_app/plugin.py": "hotspot: most hits",
+    "configs/approvals.yaml": "hotspot: most hits",
+    ".gitignore": "hotspot: most hits",
+    "docs/QUICKSTART.md": "hotspot: most hits",
+    "integrations/deepseek/plugin.py": "hotspot: most hits",
+    "configs/tool_policy.yaml": "hotspot: most hits",
+    "integrations/core_examples/plugin.py": "hotspot: most hits",
+    "integrations/nesting_app/plugin.py": "hotspot: most hits",
+    ".env.example": "hotspot: config",
+    "configs/plugins_enabled.yaml": "hotspot: config",
+    "integrations/conical_app/novahub.plugin.json": "hotspot: config",
+    "integrations/core_examples/novahub.plugin.json": "hotspot: config",
+    "integrations/deepseek/novahub.plugin.json": "hotspot: config",
+    "integrations/fs_read_tools/novahub.plugin.json": "hotspot: config",
+    "integrations/gemini/novahub.plugin.json": "hotspot: config",
+    "integrations/git/novahub.plugin.json": "hotspot: config",
+    "integrations/halftone_app/novahub.plugin.json": "hotspot: config",
+    "integrations/nesting_app/novahub.plugin.json": "hotspot: config",
+    "integrations/project_scanner/novahub.plugin.json": "hotspot: config",
+    "integrations/telegram/novahub.plugin.json": "hotspot: config",
+    "requirements.txt": "hotspot: config"
+  },
+  "diff_paths": [
+    "patches/plan_001.diff"
+  ],
+  "report_paths": [
+    "reports/patch_plan.md",
+    "reports/patch_summary.json"
+  ]
+}

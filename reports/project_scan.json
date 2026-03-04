@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-01-30T23:19:47.413175Z",
+  "root_path": "C:\\Users\\Victus\\Downloads\\nova_hub_v1_release\\nova_hub",
+  "config": {
+    "default_exclude_globs": [
+      ".git",
+      ".venv",
+      "venv",
+      "__pycache__",
+      "node_modules",
+      "dist",
+      "build",
+      "outputs",
+      "logs",
+      "reports",
+      "patches"
+    ],
+    "max_file_bytes": 200000
+  },
+  "applied": {
+    "include_globs": [],
+    "exclude_globs": [
+      ".git",
+      ".venv",
+      "venv",
+      "__pycache__",
+      "node_modules",
+      "dist",
+      "build",
+      "outputs",
+      "logs",
+      "reports",
+      "patches"
+    ]
+  },
+  "stats": {
+    "file_count": 38,
+    "total_bytes": 58595,
+    "loc_estimate": 1719,
+    "binary_files": 0
+  },
+  "languages": {
+    "python": {
+      "files": 21,
+      "loc": 1303
+    },
+    "yaml": {
+      "files": 3,
+      "loc": 149
+    },
+    "markdown": {
+      "files": 1,
+      "loc": 21
+    },
+    "json": {
+      "files": 10,
+      "loc": 225
+    }
+  },
+  "dependency_manifests": [
+    "requirements.txt"
+  ],
+  "entrypoints": [
+    "main.py"
+  ],
+  "largest_files": [
+    {
+      "path": "integrations/project_scanner/plugin.py",
+      "bytes": 9433
+    },
+    {
+      "path": "core/permission_guard/approval_flow.py",
+      "bytes": 4364
+    },
+    {
+      "path": "integrations/conical_app/plugin.py",
+      "bytes": 4178
+    },
+    {
+      "path": "main.py",
+      "bytes": 4136
+    },
+    {
+      "path": "integrations/fs_read_tools/plugin.py",
+      "bytes": 3032
+    },
+    {
+      "path": "integrations/git/plugin.py",
+      "bytes": 2338
+    },
+    {
+      "path": "core/permission_guard/tool_policy.py",
+      "bytes": 2248
+    },
+    {
+      "path": "integrations/nesting_app/plugin.py",
+      "bytes": 2080
+    },
+    {
+      "path": "core/plugin_engine/loader.py",
+      "bytes": 1928
+    },
+    {
+      "path": "integrations/deepseek/plugin.py",
+      "bytes": 1783
+    },
+    {
+      "path": "configs/tool_policy.yaml",
+      "bytes": 1731
+    },
+    {
+      "path": "integrations/halftone_app/plugin.py",
+      "bytes": 1688
+    },
+    {
+      "path": "integrations/gemini/plugin.py",
+      "bytes": 1593
+    },
+    {
+      "path": "integrations/telegram/plugin.py",
+      "bytes": 1531
+    },
+    {
+      "path": "configs/approvals.yaml",
+      "bytes": 1517
+    },
+    {
+      "path": "core/plugin_engine/registry.py",
+      "bytes": 1432
+    },
+    {
+      "path": "core/utils/dxf_min.py",
+      "bytes": 1383
+    },
+    {
+      "path": "core/plugin_engine/schema.py",
+      "bytes": 1313
+    },
+    {
+      "path": "core/permission_guard/risk.py",
+      "bytes": 1129
+    },
+    {
+      "path": "core/plugin_engine/manifest.py",
+      "bytes": 1110
+    }
+  ]
+}
